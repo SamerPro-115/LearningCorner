@@ -1,5 +1,4 @@
  *{
-    
     font-family: 'Cairo', sans-serif !important;
  }
  body{
@@ -7,6 +6,9 @@
  }
  a{
     text-decoration: none !important;
+ }
+ .container{
+  --bs-gutter-x: opx;
  }
  ::selection{
     background: #f6ca06;
@@ -32,7 +34,7 @@
  .navbar{
   width: 100%;
     height: 100px;
-    background: white;
+    background: rgb(0, 0, 0);
     -webkit-box-shadow: -16px 18px 31px -29px rgba(0,0,0,0.75);
     -moz-box-shadow: -16px 18px 31px -29px rgba(0,0,0,0.75);
     box-shadow: -16px 18px 31px -29px rgba(0,0,0,0.75);
@@ -86,7 +88,6 @@
 }
 .text-container{
   width: 100%;
-    margin-left: 5rem;
     margin-top: 14rem
 }
 .header{
@@ -574,7 +575,7 @@ hr{
 
 @media screen and (max-width: 1400px) {
  #animation{
-  margin-top: 56px
+  margin-top: 56px;
  }
  .image-logo {
   right: 44.5%;
@@ -588,6 +589,12 @@ hr{
 .image-text-description-2 {
   text-align: center;
   text-wrap: wrap;
+}
+.text-container{
+  margin-left: 0rem;
+}
+.header-description {
+  font-size: 1.5rem;
 }
 }
 
@@ -609,10 +616,8 @@ hr{
   }
   .image-col3-text-header-2{
     width: 100%;
-    margin-right: -34px;
   }
   .image-text-description-2{
-    margin-right: -40px;
     width: 100%;
   }
   #third-col-card{
@@ -628,7 +633,20 @@ hr{
     width: 100%;
     margin-top: 80px !important;
   }
-  
+  .image{
+    height: 500px;
+  }
+  .image-col2-text-header{
+    margin-top: 10rem ;
+  }
+  .image-col3-text-header-2{
+    margin-top: 10rem;
+  }
+  .java-logo {
+    right: 42.5%;
+    top: 31%;
+    width: 15%;
+}
 }
 
 @media screen and (max-width: 992px) {
@@ -638,7 +656,7 @@ hr{
   #animation{
     margin-top: 92px;
     margin-left: -73px;
-    width: 150%;
+    width: 134%;
   }
   .header{
     font-size: 2rem;
@@ -688,6 +706,37 @@ hr{
   margin-right:  auto;
   height: 450px;
 }
+.box{
+  margin-top: 80px;
+}
+.first-card-container{
+  top: -33%;
+  left: 45%;
+  width: 10%;
+}
+.second-card-container {
+  padding: 11px;
+  width: 12%;
+  top: -23%;
+  left: 44%;
+}
+#third-col-card{
+  margin-top: 0px;
+}
+.third-card-container {
+  width: 12%;
+  top: -24%;
+  left: 44.5%;
+}
+.fourth-card-container {
+  width: 10%;
+  top: -28%;
+  left: 46%;
+}
+.third-card-section-four{
+  width: 50%;
+  margin-top: 30px;
+}
 }
 
 @media screen and (max-width: 768px) {
@@ -723,10 +772,93 @@ hr{
   width: 100px;
  }
  .image-text-header {
-  right: 192px;
+  right: 37%;
+  font-size: 1.15rem;
 }
 .image-logo {
-  top: 35%;
+  top: 32%;
+}
+.box{
+  width: 95%;
+}
+.card{
+  width: 70%;
+  margin-top: 30px;
+}
 }
 
+
+@media screen and (max-width: 568px) {
+  .header{
+    font-size: 1.6rem;
+  }
+  .header-description {
+    font-size: 1.2rem;
 }
+.image {
+  height: 330px;
+  width: 90vw;
+}
+.image-logo {
+  margin-left: auto;
+  margin-right: auto;
+  right: -1.5%;
+  top: 28%;
+  width: 60px;
+}
+.image-text-header {
+  text-align: center;
+  right: -1%;
+  font-size: 1rem;
+}
+.image-text-header-col-2{
+  right: 36%;
+  top: 47%;
+}
+.image-text-header-col-2 {
+  right: 0%;
+}
+.data-icon{
+  width: 53px;
+}
+.image-text-description {
+  font-size: 1rem;
+  margin-right: 0px;
+}
+.image-col2-text-header {
+  font-size: 1.3rem;
+  margin-right: 0px;
+}
+.image-text-description-2 {
+  font-size: 1rem;
+  text-wrap: balance;
+}
+.image-col3-text-header-2{
+  font-size: 1.3rem;
+}
+.images-section-mobile .first-column{
+  margin-top: 0rem !important;
+}
+.rest-of-columns {
+  margin-top: 3rem !important;
+}
+.card{
+  width: 90%;
+}
+}
+
+/* .image-logo {
+  right: 41.5%;
+  top: 30%;
+  width: 60px;
+}
+.image-text-header {
+  width: max-content;
+  top: 51%;
+  right: 36%;
+  font-size: 15px;
+}
+.image-text-header-col-2{
+  right: 36%;
+  top: 47%;
+} */
