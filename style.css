@@ -37,7 +37,7 @@
  .navbar{
   width: 100%;
     height: 100px;
-    background: rgb(0, 0, 0);
+    background: #f9f9f9;
     -webkit-box-shadow: -16px 18px 31px -29px rgba(0,0,0,0.75);
     -moz-box-shadow: -16px 18px 31px -29px rgba(0,0,0,0.75);
     box-shadow: -16px 18px 31px -29px rgba(0,0,0,0.75);
@@ -188,7 +188,7 @@ hr{
 .icon-container{
     padding: 8px;
     border-radius: 70px;
-    width: 18%;
+    width: 75px;
     margin-left: auto;
     margin-right: auto;
     border: 3px solid #ffb800;
@@ -302,11 +302,13 @@ hr{
     top: 44%;
     right: 35%;
 }
-.about-me-description{
-    text-align: center;
-    padding: 30px;
-    text-wrap: balance;
-    margin-top: -15px;
+.about-me-description {
+  margin-right: auto;
+  width: 70%;
+  margin-left: auto;
+  text-align: center;
+  text-wrap: balance;
+  margin-top: 15px;
 }
 
 .site-footer
@@ -440,7 +442,7 @@ hr{
 }
 .social-icons a:active,.social-icons a:focus,.social-icons a:hover
 {
-  color:#fff;
+  color:#fff !important;
   background-color:#29aafe
 }
 .social-icons.size-sm a
@@ -484,12 +486,12 @@ hr{
 }
 .card{
   background: #f8f8f8;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 10px;
   border: none;
-  -webkit-box-shadow: -5px 6px 31px -13px rgba(145,23,145,1);
-  -moz-box-shadow: -5px 6px 31px -13px rgba(145,23,145,1);
-  box-shadow: -5px 6px 31px -13px rgba(145,23,145,1);
+  -webkit-box-shadow: -5px 6px 31px -13px rgb(0, 0, 0);
+  -moz-box-shadow: -5px 6px 31px -13px rgb(0, 0, 0);
+  box-shadow: -5px 6px 31px -13px rgb(0, 0, 0);
+  
 }
 .card-img-top{
   height: 300px;
@@ -500,13 +502,15 @@ hr{
     margin-top: 20px;
 }
 .card-btn{
-  background: #3f0ab1;
+  /* #3f0ab1 */
+  font-weight: bold;
     border: none;
-    color: white;
+    background: #ff9a1c;
     transition: 0.3s ease-in-out;
 }
 .card-btn:hover{
   color: white;
+  /* #5c4296 */
   background: #5c4296;
 }
 .display-mid-nav{
@@ -619,9 +623,12 @@ hr{
   }
   .image-col3-text-header-2{
     width: 100%;
+    margin-right: -37px;
+    margin-top: 10rem;
   }
   .image-text-description-2{
     width: 100%;
+    margin-right: -33px;
   }
   #third-col-card{
     margin-top: 80px
@@ -641,9 +648,6 @@ hr{
   }
   .image-col2-text-header{
     margin-top: 10rem ;
-  }
-  .image-col3-text-header-2{
-    margin-top: 10rem;
   }
   .java-logo {
     right: 42.5%;
@@ -679,7 +683,7 @@ hr{
     width: 120px;
   }
   .image-text-header {
-    right: 38.6%;
+    right: 28.6%;
     margin-left: auto;
     font-size: 1.3rem;
     margin-right: auto;
@@ -742,10 +746,16 @@ hr{
 .third-card-section-four{
   width: 50%;
   margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image-text-header-col-3{
+  right: 26.6%;
 }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
   .nav-logo{
     text-align: right !important;
   }
@@ -778,8 +788,11 @@ hr{
   width: 100px;
  }
  .image-text-header {
-  right: 37%;
+  right: 24%;
   font-size: 1.15rem;
+}
+.image-text-header-col-3{
+  right: 22%;
 }
 .image-logo {
   top: 32%;
@@ -790,6 +803,32 @@ hr{
 .card{
   width: 70%;
   margin-top: 30px;
+}
+.fourth-card-container {
+  width: 11%;
+  top: -24%;
+  left: 45%;
+}
+.first-card-container {
+  top: -33%;
+  width: 12%;
+  top: -25% !important;
+}
+.card{
+  margin-left: auto;
+  margin-right: auto;
+}
+.icons-text-description{
+  font-size: 1.5rem;
+}
+.third-icon-container{
+  margin-top: 25px;
+}
+.counter {
+  font-size: 1.7rem;
+}
+.about-me-description {
+  width: 100%;
 }
 }
 
@@ -851,6 +890,49 @@ hr{
 .card{
   width: 90%;
 }
+.box div {
+  top: -38px;
+  left: 45%;
+  width: 55px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.first-card-container{
+  top: -38px !important;
+}
+.third-card-container {
+  top: -45px !important;
+}
+.icon-container{
+  width: 65px
+}
+.second-icon-container{
+  margin-top: 25px;
+}
+}
+
+@media screen and (max-width: 468px) {
+  .box{
+    height: 100%;
+  }
+  #first-col-card {
+    margin-top: 50px;
+  }
+  #second-col-card {
+    margin-top: 50px;
+  }
+  #third-col-card{
+    margin-top: 50px;
+  }
+  #fourth-col-card{
+    margin-top: 50px;
+  }
+  .box div{
+    left: 0px;
+    right: 0px;
+  }
 }
 
 /* .image-logo {
