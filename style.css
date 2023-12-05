@@ -8,7 +8,10 @@
     text-decoration: none !important;
  }
  .container{
-  --bs-gutter-x: opx;
+  --bs-gutter-x: 0px;
+ }
+ .row{
+  --bs-gutter-x: 0px
  }
  ::selection{
     background: #f6ca06;
@@ -677,7 +680,10 @@ hr{
   }
   .image-text-header {
     right: 38.6%;
+    margin-left: auto;
     font-size: 1.3rem;
+    margin-right: auto;
+    width: 50%;
 }
 .image-logo {
   right: 43.5%;
