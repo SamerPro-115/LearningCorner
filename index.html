@@ -13,7 +13,8 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/public/style/style.css">
+    <link rel="stylesheet" href="/public/style/media.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"
         integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -28,12 +29,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo&family=IBM+Plex+Sans+Arabic&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
     <title>اكاديمية</title>
 </head>
 
 <body>
 
+   
 
     <nav class="navbar navbar-expand-md" dir="rtl">
         <div class="container-fluid">
@@ -41,17 +43,14 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link nav-btn"  href="#">الرئيسية</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-btn" aria-current="page" href="#">الدورات</a>
+                        <a class="nav-link nav-btn" aria-current="page" href="https://samer.msaaq.net/">الدورات</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link nav-btn" href="#">أعمالي</a>
                     </li>
                 </ul>
             </div>
-            <div class="text-center  nav-logo navbar-brand display-mid-nav" dir="ltr">
+            <div class="nav-logo  display-mid-nav" dir="ltr">
                 <img class="navbar-logo navbar-logo-mid" src="/public/images/logo.png" alt="Logo">
                <h5 class="learn-word d-lg-inline d-md-inline d-none learn-word-mid-nave">Learn With Bushra</h5>
             </div>
@@ -73,11 +72,12 @@
                 <h3 class="animate__animated animate__backInRight element-3">أعمالي</h3>
             </section>
         </div>
+        <div id="tsparticles"></div>
     </div>
 
 
 
-
+    
 
 
 
@@ -399,22 +399,21 @@
                 <div class="col-xs-6 col-md-6">
                     <h6 data-aos="fade-up">المجالات</h6 >
                     <ul class="footer-links first-section" data-aos="fade-up">
-                        <li><a href="http://scanfcode.com/category/c-language/">البرمجة بلغة جافا</a></li>
-                        <li><a href="http://scanfcode.com/category/front-end-development/">المعالجات السريعة ولغة التجميع</a></li>
-                        <li><a href="http://scanfcode.com/category/back-end-development/">خوارزميات وهياكل البيانات</a></li>
-                        <li><a href="http://scanfcode.com/category/java-programming-language/">معمارية الحاسوب</a></li>
+                        <li><p class="footer-text" href="http://scanfcode.com/category/c-language/">البرمجة بلغة جافا</p></li>
+                        <li><p  class="footer-text" href="http://scanfcode.com/category/front-end-development/">المعالجات السريعة ولغة التجميع</p></li>
+                        <li><p class="footer-text" href="http://scanfcode.com/category/back-end-development/">خوارزميات وهياكل البيانات</p></li>
+                        <li><p class="footer-text" href="http://scanfcode.com/category/java-programming-language/">معمارية الحاسوب</p></li>
+                        <li><p class="footer-text" href="http://scanfcode.com/category/java-programming-language/">الآمن السيبراني (قريباً)</p></li>
                     </ul>
                 </div>
 
                 <div class="col-xs-6 col-md-6" data-aos="fade-up">
                     <h6>روابط مختصرة</h6>
                     <ul class="footer-links second-section">
-                        <li><a href="http://scanfcode.com/about/">الدورات</a></li>
-                        <li><a href="http://scanfcode.com/contact/">تواصل</a></li>
-                        <li><a href="http://scanfcode.com/contribute-at-scanfcode/">الأسعار</a></li>
-                        <li><a href="http://scanfcode.com/privacy-policy/">الواجبات</a></li>
-                        <li><a href="http://scanfcode.com/sitemap/">سياسة الخصوصية</a></li>
-                        <li><a href="http://scanfcode.com/sitemap/">شروط الإستخدام</a></li>
+                        <li><a href="http://scanfcode.com/about/">الرئيسية</a></li>
+                        <li><a href="http://scanfcode.com/contact/">الدورات</a></li>
+                        <li><a href="http://scanfcode.com/privacy-policy/">اعمالي</a></li>
+                        <li><a href="http://scanfcode.com/sitemap/">تواصل</a></li>
                     </ul>
                 </div>
             </div>
@@ -443,7 +442,10 @@
 
 
 
+   
     <script src="/index.js"></script>
+    <script src="/public/animation/tsParticles.js"></script>
+    
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
