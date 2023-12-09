@@ -4,15 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="/public/style/style.css">
     <link rel="stylesheet" href="/public/style/media.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"
@@ -39,14 +36,14 @@
 
     <nav class="navbar navbar-expand-md" dir="rtl">
         <div class="container-fluid">
-            <a class="navbar-brand d-none d-md-block" href="#">الرئيسية</a>
+            <a class="navbar-brand d-none d-md-block" href="/index.html">الرئيسية</a>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link nav-btn" aria-current="page" href="https://samer.msaaq.net/">الدورات</a>
+                        <a class="nav-link nav-btn" aria-current="page" href="#">الدورات</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-btn" href="#">أعمالي</a>
+                        <a class="nav-link nav-btn" href="/public/pages/works.html">أعمالي</a>
                     </li>
                 </ul>
             </div>
@@ -67,9 +64,9 @@
         <div class="mobile-navbar text-light">
             <h1 class="mobile-nav-header">القائمة</h1>
             <section class="mt-4">
-                <h3 class="animate__animated animate__backInRight element-1">الرئيسية</h3>
-                <h3 class="animate__animated animate__backInRight element-2"> الدورات</h3>
-                <h3 class="animate__animated animate__backInRight element-3">أعمالي</h3>
+                <a href="/index.html" class="btn d-block animate__animated animate__backInRight element-1">الرئيسية<a>
+                <a href="#" class="btn d-block animate__animated animate__backInRight element-2"> الدورات</a>
+                <a href="/public/pages/works.html" class="btn d-block animate__animated animate__backInRight element-3">أعمالي</a>
             </section>
         </div>
         <div id="tsparticles"></div>
@@ -391,6 +388,8 @@
         </div>
     </div>
 
+    
+
 
     <!-- Site footer -->
     <footer class="site-footer"  data-aos="fade-up" style="margin-top: 7rem;">
@@ -410,10 +409,11 @@
                 <div class="col-xs-6 col-md-6" data-aos="fade-up">
                     <h6>روابط مختصرة</h6>
                     <ul class="footer-links second-section">
-                        <li><a href="http://scanfcode.com/about/">الرئيسية</a></li>
-                        <li><a href="http://scanfcode.com/contact/">الدورات</a></li>
-                        <li><a href="http://scanfcode.com/privacy-policy/">اعمالي</a></li>
-                        <li><a href="http://scanfcode.com/sitemap/">تواصل</a></li>
+                        <li><a href="#">الدورات</a></li>
+                        <li><a href="/public/pages/works.html">اعمالي</a></li>
+                        <li><a href="/public/pages/contact.html">تواصل</a></li>
+                        <li><a href="/public/pages/terms-of-use.html">سياسة الإستخدام</a></li>
+                        <li><a href="/public/pages/privacy-policy.html">سياسة الخصوصية</a></li>
                     </ul>
                 </div>
             </div>
@@ -444,8 +444,9 @@
 
    
     <script src="/index.js"></script>
+    <script src="/public/animation/autoType.js"></script>
+    <script src="/public/animation/lottie.js"></script>
     <script src="/public/animation/tsParticles.js"></script>
-    
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();

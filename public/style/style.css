@@ -549,14 +549,20 @@ hr{
   display: none;
 }
 .element-1{
+  font-size: 1.3rem;
+  color: white;
   transition: 0.3s ease-in-out;
   animation-duration: 0.5s;
 }
 .element-2{
+  font-size: 1.3rem;
+  color: white;
   transition: 0.3s ease-in-out;
   animation-duration: 0.7s;
 }
 .element-3{
+  font-size: 1.3rem;
+  color: white;
   transition: 0.3s ease-in-out;
   animation-duration: 0.9s;
 }

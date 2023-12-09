@@ -1,26 +1,6 @@
 
-const element = document.getElementById("animation")
-lottie.loadAnimation({
-    container: element, // the dom element that will contain the animation
-    renderer: 'svg',
-    loop: true,
-    autoplay: true,
-    path: 'https://lottie.host/b5f0133b-fff2-4394-9815-d9061e48c47f/bDJX37pUj8.json' // the path to the animation json
-  });
-  
-
-  // https://lottie.host/8f53e0f8-3b5c-46c5-9c25-1c5cae9d7af7/YtK9TpjSnw.json
-  // https://lottie.host/b5f0133b-fff2-4394-9815-d9061e48c47f/bDJX37pUj8.json
-
-  
 
 
-var typed = new Typed('.auto-type', {
-      strings: ['البرمجة !', "التعامل مع البيانات !", "معمارية الحاسوب !"],
-      typeSpeed: 75,
-      backSpeed: 30,
-      loop: true
-    });
 
 
 
@@ -98,5 +78,7 @@ var typed = new Typed('.auto-type', {
        $(".container-fluid").find("svg").replaceWith(el)
        $(".burger-list").fadeIn(400)
   });
+
+  
 
   
