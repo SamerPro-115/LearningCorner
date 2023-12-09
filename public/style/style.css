@@ -4,6 +4,9 @@
  body{
     background: #f9f9f9  !important;
  }
+ html{
+  overflow-x: hidden;
+ }
  a{
     text-decoration: none !important;
  }
@@ -83,6 +86,11 @@
     /* color: rgb(255, 196, 54); */
     background: #f1b908;
     text-shadow: -3px -1px 8px rgba(0,0,0,0.6);
+}
+section a{
+  margin-left: auto;
+    margin-right: auto;
+    width: max-content;
 }
 #animation{
     margin-top: 12px;
