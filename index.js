@@ -4,42 +4,47 @@
 
 
 
-    function startCounterWhenVisible() {
-      $('.counter').each(function() {
-        var $this = $(this);
-        var counterStarted = false;
-    
-        $(window).on('scroll', function() {
-          var windowHeight = $(window).height();
-          var scrollTop = $(window).scrollTop();
-          var offset = $this.offset().top;
-    
-          if (!counterStarted && scrollTop > offset - windowHeight + 100) {
-            var countTo = $this.attr('data-count');
-    
-            $({ countNum: $this.text() }).animate(
-              { countNum: countTo },
-              {
-                duration: 700,
-                easing: 'linear',
-                step: function() {
-                  $this.text(Math.floor(this.countNum));
-                },
-                complete: function() {
-                  $this.text(this.countNum);
-                }
-              }
-            );
-            counterStarted = true;
-          }
-        });
-      });
-    }
-    
-    // Call the function when the document is ready
-    $(document).ready(function() {
-      startCounterWhenVisible();
+function startCounterWhenVisible() {
+  var options = {
+    threshold: 0.5, // Adjust as needed
+  };
+
+  var observer = new IntersectionObserver(function (entries, observer) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        var $counter = $(entry.target);
+        if (!$counter.hasClass('counterStarted')) {
+          var countTo = $counter.attr('data-count');
+
+          $({ countNum: $counter.text() }).animate(
+            {
+              countNum: countTo,
+            },
+            {
+              duration: 700,
+              easing: 'linear',
+              step: function () {
+                $counter.text(Math.floor(this.countNum));
+              },
+              complete: function () {
+                $counter.text(this.countNum);
+              },
+            }
+          );
+          $counter.addClass('counterStarted');
+        }
+      }
     });
+  }, options);
+
+  $('.counter').each(function () {
+    observer.observe(this);
+  });
+}
+
+// Call the function to start the counters
+startCounterWhenVisible();
+
     
 
     $('.social-logo').hover(function() {
