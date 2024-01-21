@@ -13,7 +13,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="/public/favicon/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="/public/favicon/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/public/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/public/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/public/favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/public/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/public/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/public/favicon/favicon-16x16.png">
@@ -32,6 +32,7 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/public/style/style.css">
     <link rel="stylesheet" href="/public/style/media.css">
+    <link rel="stylesheet" href="/public/style/payment-methods.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -41,11 +42,13 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-    <title> Learn Corner | سياسة الخصوصية</title>
+    <title> Learn Corner وسائل الدفع | </title>
 </head>
 
 <body>
+
 
     <nav class="navbar navbar-expand-md" dir="rtl">
         <div class="container-fluid">
@@ -54,9 +57,6 @@
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link nav-btn" aria-current="page" href="https://samer.msaaq.net">الدورات</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-btn" href="/public/pages/works.html">أعمالي</a>
                     </li>
                 </ul>
             </div>
@@ -72,6 +72,7 @@
         </div>
     </nav>
 
+
     <div class="overlay ">
         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x exit-navbar" viewBox="0 0 16 16">
             <path
@@ -81,7 +82,8 @@
             <h1 class="mobile-nav-header">القائمة</h1>
             <section class="mt-4">
                 <a href="/index.html" class="btn d-block animate__animated animate__backInRight element-1">الرئيسية<a>
-                        <a href="https://samer.msaaq.net" class="btn d-block animate__animated animate__backInRight element-2"> الدورات</a>
+                        <a href="https://samer.msaaq.net"
+                            class="btn d-block animate__animated animate__backInRight element-2"> الدورات</a>
                         <a href="/public/pages/works.html"
                             class="btn d-block animate__animated animate__backInRight element-3">أعمالي</a>
             </section>
@@ -89,69 +91,61 @@
         <div id="tsparticles"></div>
     </div>
 
-
-    <div class="container mt-5">
-        <header class="text-center">
-            <h1 class="fw-bold" dir="rtl"> سياسة خصوصية Learn Corner</h1>
-        </header>
-        <section dir="rtl" class="mt-5">
-            <h2 class="fw-bold mt-5">مقدمة</h2>
-            <p>
-                يهدف موقع Learn Corner إلى حماية خصوصية زواره. يرجى قراءة النص التالي لفهم كيفية جمع واستخدام المعلومات
-                الشخصية التي تقدمها عند استخدام الموقع.
-            </p>
-            <h2 class="fw-bold mt-5">جمع المعلومات الشخصية</h2>
-            <p>
-                قد يتم جمع معلومات شخصية، مثل الاسم وعنوان البريد الإلكتروني، عند تقديمها طوعاً من قبل الزوار عند
-                التسجيل أو ملء الاستمارات على الموقع. يمكن أن يتضمن ذلك أيضًا تطبيقات أو خدمات طرف ثالث.
-
-
-
-            </p>
-            <h2 class="fw-bold mt-5">استخدام المعلومات</h2>
-            <p>
-                نستخدم المعلومات الشخصية التي تم جمعها لتحسين تجربة المستخدم على الموقع وتخصيص المحتوى والعروض بناءً على
-                اهتمامات الزوار. قد تشمل الخدمات من طرف ثالث أيضًا استخدام المعلومات لتقديم خدمات محددة.
-
-
-
+    <section>
+        <h1 class="text-center mt-5 "> وسائل الدفع المتاحة </h1>
+        <div class="icons text-center">
+            <div class="bank-container">
+                <svg class="bank-icon" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                        d="M243.4 2.6l-224 96c-14 6-21.8 21-18.7 35.8S16.8 160 32 160v8c0 13.3 10.7 24 24 24H456c13.3 0 24-10.7 24-24v-8c15.2 0 28.3-10.7 31.3-25.6s-4.8-29.9-18.7-35.8l-224-96c-8-3.4-17.2-3.4-25.2 0zM128 224H64V420.3c-.6 .3-1.2 .7-1.8 1.1l-48 32c-11.7 7.8-17 22.4-12.9 35.9S17.9 512 32 512H480c14.1 0 26.5-9.2 30.6-22.7s-1.1-28.1-12.9-35.9l-48-32c-.6-.4-1.2-.7-1.8-1.1V224H384V416H344V224H280V416H232V224H168V416H128V224zM256 64a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+                </svg>
+                <p class="mt-2">تحويل بنكي</p>
+            </div>
+            <p class="text-center mt-4 m-auto" dir="rtl" style="width: 50%;">
+                بعد مشاهدتك للدروس المجانية الأولى في المقرر الذي تخطط للتسجيل فيه، نود إعلامك بأنه الآن حان وقت السداد
+                للاستمرار في تحقيق تقدمك في رحلتك التعليمية. يمكنك سداد رسوم المقرر بسهولة باستخدام وسائل الدفع المتاحة
+                على المنصة.
+                تقدم المنصة خيار الدفع عن طريق التحويل المصرفي على حساباتنا البنكية المخصصة. يمكنك متابعة خطوات الدفع
+                على المنصة لضمان تسديد الرسوم بسرعة وسهولة.
+                نحن هنا لدعمك في كل خطوة على طول رحلتك التعليمية، ونتطلع إلى رؤيتك تحقق أقصى استفادة من دوراتنا وتطوير
+                مهاراتك بشكل فعّال. لا تتردد في التواصل معنا إذا كانت لديك أي استفسارات أو تحتاج إلى مساعدة في عملية
+                السداد.
 
             </p>
-            <h2 class="fw-bold mt-5">الكشف عن المعلومات
-            </h2>
-            <p>
-                نحن لا نبيع أو نتاجر بمعلوماتك الشخصية لأي طرف خارجي. ومع ذلك، قد نشارك معلومات مع خدمات طرف ثالث تعمل
-                معنا في تقديم خدمات الموقع.
+            <div class="image-container">
+                <h2 class="text-center mb-4">يمكنك التحويل على الحسابات البنكية الموضحة في الأسفل</h2>
+                <img src="/public/images/Bank-account.png" class="bank-image" alt="Bank account">
+            </div>
+        </div>
+        <div class="container">
+            <h1 class="text-center mt-5">قريباً</h1>
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                    <div class="soon text-center mt-5">
+                        <div class="mada-container">
+                            <img class="mada-icon" src="/public/images/mada.png" alt="mada pay">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                    <div class="soon text-center mt-5">
+                        <div class="visa-container">
+                            <img class="visa-icon" src="/public/images/visa.png" alt="visa">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                    <div class="soon text-center mt-5">
+                        <div class="mastercard-container">
+                            <img class="mastercard-icon" src="/public/images/mastercard.png" alt="mastercard">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-
-
-            </p>
-            <h2 class="fw-bold mt-5">ملفات تعريف الارتباط والخدمات الخارجية
-
-
-            </h2>
-            <p>
-                يمكن للموقع أن يستخدم ملفات تعريف الارتباط ويدمج خدمات طرف ثالث التي قد تجمع بيانات عن الزوار. تأكد من
-                مراجعة سياسات الخصوصية الخاصة بتلك الخدمات لفهم كيفية جمع واستخدام البيانات.
-
-
-            </p>
-            <h2 class="fw-bold mt-5">الموافقة على الشروط
-
-            </h2>
-            <p>
-                باستخدامك لموقعنا، فإنك توافق على جمع واستخدام معلوماتك الشخصية وفقًا لسياسة الخصوصية هذه، بما في ذلك
-                استخدام الخدمات من طرف ثالث.
-
-                يرجى مراجعة هذه الصفحة بشكل دوري للتحديثات أو التغييرات التي قد تطرأ على سياسة الخصوصية.
-
-
-
-            </p>
-
-        </section>
-    </div>
-
+    </section>
 
     <!-- Site footer -->
     <footer class="site-footer" data-aos="fade-up" style="margin-top: 7rem;">
@@ -182,15 +176,15 @@
                         </li>
                     </ul>
                 </div>
-
+    
                 <div class="col-xs-6 col-md-6" data-aos="fade-up">
                     <h6>روابط مختصرة</h6>
                     <ul class="footer-links second-section">
                         <li><a href="https://samer.msaaq.net">الدورات</a></li>
-                        <li><a href="/public/pages/works.html">اعمالي</a></li>
                         <li><a href="/public/pages/contact.html">تواصل</a></li>
-                        <li><a href="/public/pages/terms-of-use.html">شروط الإستخدام</a></li>
-                        <li><a href="/public/pages/privacy-policy.html">سياسة الخصوصية</a></li>
+                        <li><a href="/public/pages//terms-and-conditions.html"> الشروط والأحكام</a></li>
+                        <li><a href="/public/pages/common-q.html">الأسئلة الشائعة</a></li>
+                        <li><a href="/public/pages/payment-method.html">طرق الدفع</a></li>
                     </ul>
                 </div>
             </div>
@@ -198,46 +192,26 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-sm-6 col-xs-12">
-                    <p class="copyright-text"> Learn Corner جميع الحقوق محفوظة لدى  &copy;
-
+                    <p class="copyright-text"> Learn Corner جميع الحقوق محفوظة لدى &copy;
+    
                     </p>
                 </div>
-
+    
                 <div class="col-md-4 col-sm-6 col-xs-12 ">
                     <ul class="social-icons">
-                        <li><a class="facebook social-logo" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="16"
-                                    width="10"
-                                    viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
-                                    <path
-                                        d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
-                                </svg></a></li>
-                        <li><a class="twitter social-logo" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="16"
-                                    width="16"
-                                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
-                                    <path
-                                        d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
-                                </svg></a></li>
-                        <li><a class="instagram social-logo" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                        <li><a class="instagram social-logo" target="_blank" href="https://www.instagram.com/boosh.asiri/"><svg xmlns="http://www.w3.org/2000/svg"
                                     height="16" width="14"
                                     viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
                                     <path
                                         d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
-                                </svg></a></li>
-                        <li><a class="linkedin social-logo" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="16"
-                                    width="14"
-                                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
-                                    <path
-                                        d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
                                 </svg></a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
+    
 
-
-
-    <script src="/index.js"></script>
     <script src="/public/animation/tsParticles.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

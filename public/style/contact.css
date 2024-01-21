@@ -193,6 +193,14 @@ ul li{
 .right-col button:hover{
     background: linear-gradient(299.5deg, #ff9404 35.53%, #000000 109.8%);
 }
+.prevent-user{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
 
 @media screen and (max-width: 992px) {
     .form{

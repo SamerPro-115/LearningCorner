@@ -1,0 +1,62 @@
+.bank-icon{
+    width: 50px;
+    margin-top: 13px;
+    fill: gray;
+}
+.bank-container{
+    margin-top: 50px;
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ececec;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    box-shadow: -4px 4px 15px -7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -4px 4px 15px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: -4px 4px 15px -7px rgba(0,0,0,0.75);
+}
+.mada-container, .mastercard-container, .visa-container{
+    border: 1px solid #ececec;
+    border-radius: 5px;
+    box-shadow: -4px 4px 15px -7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -4px 4px 15px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: -4px 4px 15px -7px rgba(0,0,0,0.75);
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+.mada-icon, .mastercard-icon, .visa-icon{
+    width: 100px;
+}
+.image-container{
+    margin-top: 50px;
+    text-align: center;
+}
+.bank-image{
+    width: 700px;
+    border-radius: 20px
+}
+.image-container h2{
+   text-wrap: balance;
+}
+@media screen and (max-width: 992px) {
+    .bank-image{
+        width: 500px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .icons p{
+        width: 90% !important;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .bank-container{
+        width: 90%;
+    }
+    .bank-image{
+        width: 90%;
+    }
+}

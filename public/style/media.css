@@ -58,6 +58,12 @@
      .fourth-card-container{
        width: 14%; 
      }
+     .first-card{
+      height: 145px;
+     }
+     .third-card{
+      height: 165px 
+     }
      .fourth-card{
        width: 100%;
        margin-top: 80px !important;
@@ -134,30 +140,37 @@
    }
    .box{
      margin-top: 80px;
+     width: 90% !important;
    }
    .first-card-container{
      top: -33%;
      left: 45%;
      width: 10%;
    }
+   .first-card{
+    height: auto;
+   }
+   .third-card{
+    height: auto; 
+   }
    .second-card-container {
-     padding: 11px;
-     width: 12%;
-     top: -23%;
-     left: 44%;
+    padding: 11px;
+    width: 9.5%;
+    top: -33%;
+    left: 45%;
    }
    #third-col-card{
      margin-top: 0px;
    }
    .third-card-container {
-     width: 12%;
-     top: -24%;
-     left: 44.5%;
+    width: 10%;
+    top: -28%;
+    left: 44.7%;
    }
    .fourth-card-container {
      width: 10%;
      top: -28%;
-     left: 46%;
+     left: 44.5%;
    }
    .third-card-section-four{
      width: 50%;
@@ -261,6 +274,12 @@
   {
     margin-bottom:30px
   }
+  .third-card-container svg, .fourth-card-container svg{
+    width: 85% !important;
+   }
+   .second-card-container svg{
+    width: 70% !important;
+   }
    }
    
    
@@ -342,12 +361,10 @@
    .second-icon-container{
      margin-top: 25px;
    }
+  
    }
    
    @media screen and (max-width: 468px) {
-     .box{
-       height: 100%;
-     }
      #first-col-card {
        margin-top: 50px;
      }
