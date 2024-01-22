@@ -25,19 +25,49 @@
     margin-right: auto;
     width: 90%;
 }
+.tamara-container, .tabby-container{
+    padding: 10px;
+    border: 1px solid #ececec;
+    border-radius: 5px;
+    box-shadow: -4px 4px 15px -7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -4px 4px 15px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: -4px 4px 15px -7px rgba(0,0,0,0.75);
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
 .mada-icon, .mastercard-icon, .visa-icon{
     width: 100px;
+}
+.tamara-icon, .tabby-icon{
+    width: 200px;
+}
+
+.tabby-icon{
+    padding: 23px
 }
 .image-container{
     margin-top: 50px;
     text-align: center;
 }
 .bank-image{
-    width: 700px;
+    width: 70%;
     border-radius: 20px
 }
 .image-container h2{
    text-wrap: balance;
+}
+.bank-data{
+    box-shadow: -4px 4px 15px -7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -4px 4px 15px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: -4px 4px 15px -7px rgba(0,0,0,0.75);
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    overflow-wrap: break-word;
+
 }
 @media screen and (max-width: 992px) {
     .bank-image{
@@ -49,6 +79,9 @@
 @media screen and (max-width: 768px) {
     .icons p{
         width: 90% !important;
+    }
+    .tamara-icon, .tabby-icon{
+        width: 150px;
     }
 }
 
