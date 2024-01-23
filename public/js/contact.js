@@ -1,4 +1,4 @@
-emailjs.init('YbiEM1fx0-Xe8-7Fq')
+emailjs.init('UGb45tFAjyzPMu7KM')
 
 function restrictInput(el) {
     el.addEventListener("input", function() {
@@ -29,7 +29,7 @@ function sendEmail() {
     
 
 
-     emailjs.sendForm("service_4yefmfa", "template_g97jk3l", form)
+     emailjs.sendForm("service_s94coxh", "template_zkgv66q", form)
          .then(function(response) {
              console.log("Email sent successfully:", response);
              $("#submit").attr("disabled", false)
