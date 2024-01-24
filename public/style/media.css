@@ -356,6 +356,9 @@
     transform: translate(-9%, 9%);
     right: 18%;
 }
+#students-opinion{
+  padding: 0px;
+}
 
    }
    
@@ -442,7 +445,7 @@
     width: 65%;
 }
 .student-opinion {
-  width: 85%;
+  width: 100%;
   margin-bottom: 30px;
 }
 .carousel {
