@@ -733,6 +733,8 @@ cursor: pointer;
 .offer-note{
     color: red;
     font-size: 12px;
+    margin-bottom: 30px;
+    margin-top: 20px;
 }
 .money-image{
   margin-right: 10px;
