@@ -85,6 +85,29 @@ startCounterWhenVisible();
        $(".burger-list").fadeIn(400)
   });
 
-  
 
+  function redirectToProductPage(productPageUrl) {
+    window.location.href = productPageUrl;
+  }
+
+  function openOverlay() {
+    $(".overlay-popup").fadeIn(400)
+    $(".popup-container").fadeIn(400)
+    $("html").css("overflow", "hidden")
+}
+
+
+
+  $(document).on("click", ".close-offers-popup",function(){
+    $(".popup-container").fadeOut(400)
+    $(".overlay-popup").fadeOut(400)
+    $("html").css("overflow", "visible");
+  })
+  
+  $(document).on("click", ".btn-offers-small-screens", function() {
+    $(".exit-navbar").click();
+    $(".overlay-popup").fadeIn(400)
+    $(".popup-container").fadeIn(400)
+    $("html").css("overflow", "hidden")
+  })
   

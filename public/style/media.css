@@ -28,6 +28,12 @@
    .first-collection-last-card .card-body a, .first-collection-first-card .card-body a{
     margin-top: 0px;
    }
+   .installments-pay {
+    left: 17%;
+}
+.installments-with-code{
+  left: 31%;
+}
    }
    
    @media screen and (max-width: 1200px) {
@@ -92,7 +98,33 @@
       width: 400px;
       margin-top: 100px;
   }
-   
+  .popup-container {
+    overflow-y: scroll; 
+    max-height: 100vh;
+     scrollbar-width: thin; /* For Firefox */
+  }
+  /* Webkit browsers (Chrome, Safari) */
+  .popup-container::-webkit-scrollbar {
+    width: 12px;
+  }
+
+
+  .popup-container::-webkit-scrollbar-track {
+    background-color: whitesmoke; /* Change this to the desired background color for the scrollbar track */
+    border-radius: 4.3px;
+  }
+  .fourth-card-offer{
+    margin-top: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 40%;
+  }
+  .popup-container {
+    margin-top: 5px;
+  }
+   .installments-pay-fourth-card{
+    left: 24%;
+   }
    }
    
    @media screen and (max-width: 992px) {
@@ -213,6 +245,16 @@
   margin-bottom: 50px;
   margin-top: 23px;
 }
+
+.third-card-offer {
+  margin-top: 30px;
+}
+.fourth-card-offer{
+ width: auto;
+    margin-left: 10px;
+    margin-right: 10px 
+}
+
  
    }
 
@@ -306,6 +348,15 @@
 .second-section-header{
   margin-bottom: 0rem
 }
+.second-card-offer,.third-card-offer,.fourth-card-offer{
+  margin-top: 30px;
+}
+.installments-pay{
+  left: 28%;
+    transform: translate(-9%, 9%);
+    right: 18%;
+}
+
    }
    
    
