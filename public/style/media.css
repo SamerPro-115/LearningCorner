@@ -390,6 +390,22 @@
    .about-me-image {
     width: 65%;
 }
+.student-opinion {
+  width: 85%;
+  margin-bottom: 30px;
+}
+.carousel {
+  width: 100%;
+}
+.carousel-indicators {
+  width: 75%;
+}
+.bi-stars{
+  width: 35px;
+    height: 35px;
+    color: #ffd02d;
+    margin-right: 5px;
+}
   
    }
    

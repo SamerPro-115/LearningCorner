@@ -203,6 +203,7 @@ hr{
     margin-left: auto;
     margin-right: auto;
     border: 3px solid #ffb800;
+    margin-top: 60px;
 }
 .icon-container svg{
     width: 50%;
@@ -642,9 +643,12 @@ hr{
     -webkit-box-shadow: -4px 4px 15px -7px rgba(0,0,0,0.75);
     -moz-box-shadow: -4px 4px 15px -7px rgba(0,0,0,0.75);
     border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 780px
 }
 .student-opinion{
-  width: 70%;
+  width: 500px;
   height: 500px;
   margin-left: auto;
   margin-right: auto;
@@ -659,7 +663,7 @@ hr{
   background: #fed112;
   margin-left: auto;
   margin-right: auto;
-  width: 10%;
+  width: 30%;
   border-radius: 10px;
 }
 .carousel-indicators [data-bs-target] {
@@ -671,4 +675,10 @@ hr{
 
 .carousel-control-next-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 0 .708L10.293 8l-5.647 5.646a.5.5 0 0 1-.708-.708l6-6a.5.5 0 0 1 0-.708l-6-6a.5.5 0 0 1 .708 0z' fill='%23000000' /%3e%3c/svg%3e");
+}
+.bi-stars{
+  width: 47px;
+    height: 47px;
+    color: #ffd02d;
+    margin-right: 5px;
 }

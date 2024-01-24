@@ -122,7 +122,7 @@
                         <a href="/public/pages/payment-method.html"
                             class="btn d-block animate__animated animate__backInRight element-3">وسائل الدفع</a>
                         <a href="#" class="btn d-block animate__animated animate__backInRight element-3">العروض</a>
-                        <a href="#" class="btn d-block animate__animated animate__backInRight element-3">عملية
+                        <a href="/public/pages/installments.html" class="btn d-block animate__animated animate__backInRight element-3">عملية
                             التقسيط</a>
                         <a href="https://app.learningcorner.net"
                             class="btn d-block animate__animated animate__backInRight element-3"> تسجيل الدخول</a>
@@ -364,22 +364,20 @@
 
     <hr class="second-hr" data-aos="fade-up">
 
-    <div id="third-section" class="fade-in-section" dir="rtl">
+    <div id="third-section" class="fade-in-section mb-5" dir="rtl">
         <div class="container">
             <div class="row" data-aos="fade-up">
-                <div class="col-12 text-center">
-                    <div class="third-icon-container icon-container">
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
-                            <path
-                                d="M144 0a80 80 0 1 1 0 160A80 80 0 1 1 144 0zM512 0a80 80 0 1 1 0 160A80 80 0 1 1 512 0zM0 298.7C0 239.8 47.8 192 106.7 192h42.7c15.9 0 31 3.5 44.6 9.7c-1.3 7.2-1.9 14.7-1.9 22.3c0 38.2 16.8 72.5 43.3 96c-.2 0-.4 0-.7 0H21.3C9.6 320 0 310.4 0 298.7zM405.3 320c-.2 0-.4 0-.7 0c26.6-23.5 43.3-57.8 43.3-96c0-7.6-.7-15-1.9-22.3c13.6-6.3 28.7-9.7 44.6-9.7h42.7C592.2 192 640 239.8 640 298.7c0 11.8-9.6 21.3-21.3 21.3H405.3zM224 224a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zM128 485.3C128 411.7 187.7 352 261.3 352H378.7C452.3 352 512 411.7 512 485.3c0 14.7-11.9 26.7-26.7 26.7H154.7c-14.7 0-26.7-11.9-26.7-26.7z" />
-                        </svg>
-                    </div>
-                    <h3 class="icons-text-description" data-aos="fade-up"><span class="counter"
-                            data-count="1000">0</span><span class="plus">+</span> طالب/ة</h3>
-                </div>
-                <h2 class="text-center mt-5 mb-4" style="color:#8c20b4">أراء الطلاب</h2>
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                
+                <h1 class="text-center mb-4" >
+                    <span style="color:#8c20b4">
+                        أراء الطلاب
+                    </span>
+                    <span >
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-stars" viewBox="0 0 16 16">
+                        <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+                      </svg></span>
+                </h1>
+                <div id="carouselExampleIndicators" data-aos="fade-up" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -433,6 +431,18 @@
                       <span class="visually-hidden">Next</span>
                     </button>
                   </div>
+
+                  <div class="col-12 text-center mb-5" style="margin-top: 40px">
+                    <div class="third-icon-container icon-container">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                            <path
+                                d="M144 0a80 80 0 1 1 0 160A80 80 0 1 1 144 0zM512 0a80 80 0 1 1 0 160A80 80 0 1 1 512 0zM0 298.7C0 239.8 47.8 192 106.7 192h42.7c15.9 0 31 3.5 44.6 9.7c-1.3 7.2-1.9 14.7-1.9 22.3c0 38.2 16.8 72.5 43.3 96c-.2 0-.4 0-.7 0H21.3C9.6 320 0 310.4 0 298.7zM405.3 320c-.2 0-.4 0-.7 0c26.6-23.5 43.3-57.8 43.3-96c0-7.6-.7-15-1.9-22.3c13.6-6.3 28.7-9.7 44.6-9.7h42.7C592.2 192 640 239.8 640 298.7c0 11.8-9.6 21.3-21.3 21.3H405.3zM224 224a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zM128 485.3C128 411.7 187.7 352 261.3 352H378.7C452.3 352 512 411.7 512 485.3c0 14.7-11.9 26.7-26.7 26.7H154.7c-14.7 0-26.7-11.9-26.7-26.7z" />
+                        </svg>
+                    </div>
+                    <h3 class="icons-text-description" data-aos="fade-up"><span class="counter"
+                            data-count="1000">0</span><span class="plus">+</span> طالب/ة</h3>
+                </div>
             </div>
             <div class="about-me text-center mt-5" data-aos="fade-up">
 
