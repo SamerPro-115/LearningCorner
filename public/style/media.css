@@ -131,6 +131,24 @@
     nav div .navbar-collapse .navbar-nav .nav-item .nav-link{
       font-size: 1rem;
     }
+    .navbar-nav{
+      padding-right: 0px
+    }
+    .nav-btn-mobile{
+      background: white;
+    }
+    .offcanvas-body {
+      padding: 0px;
+    }
+    .nav-btn-mobile:hover{
+      background: #ffbf01;
+    }
+    .offcanvas-header{
+      margin-bottom: 15px;
+    }
+    .navbar-collapse{
+      display: none !important;
+    }
      #first-section{
        margin-top: -54px;
      }
@@ -146,12 +164,6 @@
        font-size: 1.4rem;
        top: 250px;
        width: 111%;
-     }
-     .navbar{
-       height: 100%;
-     }
-     .navbar-logo{
-       width: 120px;
      }
      .image-text-header {
        right: 28.6%;
@@ -258,8 +270,24 @@
   margin-bottom: 30px;
   margin-top: 20px;
 }
-
- 
+.card-title{
+  font-size: 1rem;
+}
+.cards{
+  height: auto;
+}
+.home-page-card .card-img-top{
+  height:100%
+}
+.home-page-card {
+  width: 100%;
+}
+.mobile-new-word-offer{
+  right: 0%;
+    width: 85px;
+    border-bottom-right-radius: 0px;
+    top: 15%;
+}
    }
 
    @media screen and (max-width: 767px) {
@@ -290,9 +318,6 @@
      width: 69% !important;
      margin-left: auto;
      margin-right: auto;
-    }
-    .navbar-logo{
-     width: 105px;
     }
     
    .card{

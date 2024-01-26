@@ -45,7 +45,6 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/public/style/style.css">
     <link rel="stylesheet" href="/public/style/media.css">
-    <link rel="stylesheet" href="/public/style/installments.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -64,9 +63,12 @@
 
     <nav class="navbar navbar-expand-md" dir="rtl">
         <div class="container-fluid">
-            <a class="navbar-brand d-none d-md-block" href="/index.html">الرئيسية</a>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+            <div class="nav-logo display-mid-nav" dir="rtl">
+                <img class="navbar-logo navbar-logo-mid" src="/public/images/logo.png" alt="Logo">
+            </div>
+            <a class="navbar-brand d-xl-block d-lg-block d-md-none d-none" href="/index.html">الرئيسية</a>
+            <div class="collapse d-xl-block d-lg-block d-md-none" style="margin-left: auto;" id="navbarNav">
+                <ul class="navbar-nav" style="column-gap: 0.5rem">
                     <li class="nav-item">
                         <a class="nav-link nav-btn" aria-current="page"
                             href="https://app.learningcorner.net">الدورات</a>
@@ -75,49 +77,70 @@
                         <a class="nav-link nav-btn" aria-current="page" href="/public/pages/payment-method.html">وسائل
                             الدفع</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-btn offers-btn" onclick="openOverlay()" aria-current="page" href="#">العروض</a>
+                    <li class="nav-item" style="position: relative;">
+                        <a class="nav-link nav-btn offers-btn"   onclick="openOverlay()" aria-current="page"
+                            href="#">العروض</a>
+                            <span id="changingColorElement" class="new-word-offer">جديد !</span>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-btn" aria-current="page" href="/public/pages/installments.html"> تعليمات التقسيط</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-btn" aria-current="page" href="https://app.learningcorner.net">تسجيل
-                            الدخول</a>
+                        <a class="nav-link nav-btn" aria-current="page" href="/public/pages/installments.html"> تعليمات
+                            التقسيط</a>
                     </li>
                 </ul>
             </div>
-            <div class="nav-logo  display-mid-nav" dir="ltr">
-                <img class="navbar-logo navbar-logo-mid" src="/public/images/logo.png" alt="Logo">
-            </div>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                class="bi d-xl-none d-lg-none d-md-none bi-list burger-list" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
-            </svg>
+            <a class="login d-xl-block d-lg-block d-md-block d-none" aria-current="page" style="margin-right: auto;"
+                href="https://app.learningcorner.net">تسجيل/دخول</a>
+            </ul>
+            <button class="navbar-toggler d-xl-none d-lg-none d-md-block border-0" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
     </nav>
-    <div class="overlay">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x exit-navbar" viewBox="0 0 16 16">
-            <path
-                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
-        </svg>
-        <div class="mobile-navbar text-light">
-            <h1 class="mobile-nav-header">القائمة</h1>
-            <section class="mt-4">
-                <a href="/index.html" class="btn d-block animate__animated animate__backInRight element-1">الرئيسية<a>
-                        <a href="https://app.learningcorner.net"
-                            class="btn d-block animate__animated animate__backInRight element-2"> الدورات</a>
-                        <a href="/public/pages/payment-method.html"
-                            class="btn d-block animate__animated animate__backInRight element-3">وسائل الدفع</a>
-                        <a href="#" class="btn d-block animate__animated animate__backInRight element-3 btn-offers-small-screens">العروض</a>
-                        <a href="/public/pages/installments.html" class="btn d-block animate__animated animate__backInRight element-3">تعليمات التقسيط</a>
-                        <a href="https://app.learningcorner.net"
-                            class="btn d-block animate__animated animate__backInRight element-3"> تسجيل الدخول</a>
-            </section>
+
+    <!-- Offcanvas Container -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div id="tsparticles"></div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav" dir="rtl" style="column-gap: 0.5rem">
+                <li class="nav-item">
+                    <a class="nav-link nav-btn-mobile" aria-current="page"
+                        href="https://learningcorner.net">الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-btn-mobile" aria-current="page"
+                        href="https://app.learningcorner.net">الدورات</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-btn-mobile" aria-current="page"
+                        href="/public/pages/payment-method.html">وسائل الدفع</a>
+                </li>
+                <li class="nav-item" style="position: relative;">
+                    <a class="nav-link nav-btn-mobile offers-btn"  onclick="openOverlay()" aria-current="page"
+                        href="#">العروض</a>
+                        <span id="changingColorElementMobile" class="new-word-offer mobile-new-word-offer">جديد !</span>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-btn-mobile" aria-current="page" href="/public/pages/installments.html">
+                        تعليمات التقسيط</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-btn-mobile d-lg-none d-md-none d-block" aria-current="page"
+                        href="/public/pages/installments.html"> تسجيل الدخول </a>
+                </li>
+            </ul>
+        </div>
     </div>
+
+
+
+
 
 
 
@@ -669,7 +692,7 @@
                 </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-12" data-aos="fade-up">
-                <div class="card cards" onclick="redirectToProductPage('')">
+                <div class="card cards" onclick="redirectToProductPage('https\:\/\/app.learningcorner.net/courses/البرمجة-الغرضية-الموجهة-1705764347-copy-OqJMh67plquilk0a-1706008894')">
                     <img loading="lazy" class="card-img-top" src="/public/images/OOP.jpg" alt="البرمجة الغرضية الموجهة">
                     <div class="card-body">
                         <div class="container">
@@ -799,7 +822,7 @@
                 </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-12" data-aos="fade-up">
-                <div class="card cards" onclick="redirectToProductPage('')">
+                <div class="card cards" onclick="redirectToProductPage('https\:\/\/app.learningcorner.net/courses/المعالجات-الصغيرة-ولغة-التجميع-1705763798-copy-a4rpMOJtXgTOQ0Tv-1706097859')">
                     <img loading="lazy" class="card-img-top" src="/public/images/Processors.jpeg" alt="المعالجات الصغيرة ولغة التجميع">
                     <div class="card-body">
                         <div class="container">
@@ -841,7 +864,7 @@
                 </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-12" data-aos="fade-up">
-                <div class="card cards" onclick="redirectToProductPage('')">
+                <div class="card cards" onclick="redirectToProductPage('https\:\/\/app.learningcorner.net/courses/المعالجات-الصغيرة-ولغة-التجميع-1705763798-copy-a4rpMOJtXgTOQ0Tv-1706097859-copy-oTQlDw5Q7dSB5ahJ-1706098139')">
                     <img loading="lazy" class="card-img-top" src="/public/images/Processors.jpeg" alt="المعالجات الصغيرة ولغة التجميع">
                     <div class="card-body">
                         <div class="container">
@@ -896,8 +919,8 @@
 
 
 
-    <!-- Site footer -->
-    <footer class="site-footer" data-aos="fade-up" style="margin-top: 7rem;">
+      <!-- Site footer -->
+      <footer class="site-footer" data-aos="fade-up" style="margin-top: 7rem;">
         <div class="container">
             <div class="row text-center">
                 <div class="col-xs-6 col-md-6">
@@ -941,8 +964,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-sm-6 col-xs-12">
-                    <p class="copyright-text"> Learn Corner جميع الحقوق محفوظة لدى &copy;
-
+                    <p class="copyright-text" dir="rtl"> جميع الحقوق محفوظة © 2024، Learning Corner with Bushra
                     </p>
                 </div>
 
@@ -965,10 +987,25 @@
 
 
     <script src="/index.js"></script>
-    <script src="/public/animation/tsParticles.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script>
+        const navbar = document.querySelector('nav');
+        const scrollHeightThreshold = 140; // Set your desired scroll height
+        
+        window.onscroll = function() {
+            const currentScrollPos = window.pageYOffset;
+        
+            if (currentScrollPos > scrollHeightThreshold) {
+                navbar.classList.add('fixed-top');
+            } else {
+                navbar.classList.remove('fixed-top');
+            }
+        };
+        
+
     </script>
 </body>
 

@@ -66,11 +66,14 @@
 <body>
 
 
-    <nav class="navbar navbar-expand-md" dir="rtl">
+    <nav class="navbar navbar-expand-md fixed-top" dir="rtl">
         <div class="container-fluid">
-            <a class="navbar-brand d-none d-md-block" href="/index.html">الرئيسية</a>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+            <div class="nav-logo display-mid-nav" dir="rtl">
+                <img class="navbar-logo navbar-logo-mid" src="/public/images/logo.png" alt="Logo">
+            </div>
+            <a class="navbar-brand d-xl-block d-lg-block d-md-none d-none" href="/index.html">الرئيسية</a>
+            <div class="collapse d-xl-block d-lg-block d-md-none" style="margin-left: auto;" id="navbarNav">
+                <ul class="navbar-nav" style="column-gap: 0.5rem">
                     <li class="nav-item">
                         <a class="nav-link nav-btn" aria-current="page"
                             href="https://app.learningcorner.net">الدورات</a>
@@ -79,50 +82,68 @@
                         <a class="nav-link nav-btn" aria-current="page" href="/public/pages/payment-method.html">وسائل
                             الدفع</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-btn offers-btn" onclick="openOverlay()" aria-current="page" href="#">العروض</a>
+                    <li class="nav-item" style="position: relative;">
+                        <a class="nav-link nav-btn offers-btn"   onclick="openOverlay()" aria-current="page"
+                            href="#">العروض</a>
+                            <span id="changingColorElement" class="new-word-offer">جديد !</span>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-btn" aria-current="page" href="/public/pages/installments.html"> تعليمات التقسيط</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-btn" aria-current="page" href="https://app.learningcorner.net">تسجيل
-                            الدخول</a>
+                        <a class="nav-link nav-btn" aria-current="page" href="/public/pages/installments.html"> تعليمات
+                            التقسيط</a>
                     </li>
                 </ul>
             </div>
-            <div class="nav-logo  display-mid-nav" dir="ltr">
-                <img class="navbar-logo navbar-logo-mid" src="/public/images/logo.png" alt="Logo">
-            </div>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                class="bi d-xl-none d-lg-none d-md-none bi-list burger-list" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
-            </svg>
+            <a class="login d-xl-block d-lg-block d-md-block d-none" aria-current="page" style="margin-right: auto;"
+                href="https://app.learningcorner.net">تسجيل/دخول</a>
+            </ul>
+            <button class="navbar-toggler d-xl-none d-lg-none d-md-block border-0" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
     </nav>
 
-    <div class="overlay">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x exit-navbar" viewBox="0 0 16 16">
-            <path
-                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
-        </svg>
-        <div class="mobile-navbar text-light">
-            <h1 class="mobile-nav-header">القائمة</h1>
-            <section class="mt-4">
-                <a href="/index.html" class="btn d-block animate__animated animate__backInRight element-1">الرئيسية<a>
-                        <a href="https://app.learningcorner.net"
-                            class="btn d-block animate__animated animate__backInRight element-2"> الدورات</a>
-                        <a href="/public/pages/payment-method.html"
-                            class="btn d-block animate__animated animate__backInRight element-3">وسائل الدفع</a>
-                        <a href="#" class="btn d-block animate__animated animate__backInRight element-3 btn-offers-small-screens">العروض</a>
-                        <a href="/public/pages/installments.html" class="btn d-block animate__animated animate__backInRight element-3">تعليمات التقسيط</a>
-                        <a href="https://app.learningcorner.net"
-                            class="btn d-block animate__animated animate__backInRight element-3"> تسجيل الدخول</a>
-            </section>
+    <!-- Offcanvas Container -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div id="tsparticles"></div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav" dir="rtl" style="column-gap: 0.5rem">
+                <li class="nav-item">
+                    <a class="nav-link nav-btn-mobile" aria-current="page"
+                        href="https://learningcorner.net">الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-btn-mobile" aria-current="page"
+                        href="https://app.learningcorner.net">الدورات</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-btn-mobile" aria-current="page"
+                        href="/public/pages/payment-method.html">وسائل الدفع</a>
+                </li>
+                <li class="nav-item" style="position: relative;">
+                    <a class="nav-link nav-btn-mobile offers-btn"  onclick="openOverlay()" aria-current="page"
+                        href="#">العروض</a>
+                        <span id="changingColorElementMobile" class="new-word-offer mobile-new-word-offer">جديد !</span>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-btn-mobile" aria-current="page" href="/public/pages/installments.html">
+                        تعليمات التقسيط</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-btn-mobile d-lg-none d-md-none d-block" aria-current="page"
+                        href="/public/pages/installments.html"> تسجيل الدخول </a>
+                </li>
+            </ul>
+        </div>
     </div>
+
+
 
 
 
@@ -291,70 +312,69 @@
 
     </section>
 
-  <!-- Site footer -->
-  <footer class="site-footer" data-aos="fade-up" style="margin-top: 7rem;">
-    <div class="container">
-        <div class="row text-center">
-            <div class="col-xs-6 col-md-6">
-                <h6 data-aos="fade-up">المجالات</h6>
-                <ul class="footer-links first-section" data-aos="fade-up">
-                    <li>
-                        <p class="footer-text" href="http://scanfcode.com/category/c-language/">البرمجة بلغة جافا
-                        </p>
-                    </li>
-                    <li>
-                        <p class="footer-text" href="http://scanfcode.com/category/front-end-development/">المعالجات
-                            السريعة ولغة التجميع</p>
-                    </li>
-                    <li>
-                        <p class="footer-text" href="http://scanfcode.com/category/back-end-development/">خوارزميات
-                            وهياكل البيانات</p>
-                    </li>
-                    <li>
-                        <p class="footer-text" href="http://scanfcode.com/category/java-programming-language/">
-                            معمارية الحاسوب</p>
-                    </li>
-                    <li>
-                        <p class="footer-text" href="http://scanfcode.com/category/java-programming-language/">الآمن
-                            السيبراني (قريباً)</p>
-                    </li>
-                </ul>
-            </div>
+    <!-- Site footer -->
+    <footer class="site-footer" data-aos="fade-up" style="margin-top: 7rem;">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-xs-6 col-md-6">
+                    <h6 data-aos="fade-up">المجالات</h6>
+                    <ul class="footer-links first-section" data-aos="fade-up">
+                        <li>
+                            <p class="footer-text" href="http://scanfcode.com/category/c-language/">البرمجة بلغة جافا
+                            </p>
+                        </li>
+                        <li>
+                            <p class="footer-text" href="http://scanfcode.com/category/front-end-development/">المعالجات
+                                السريعة ولغة التجميع</p>
+                        </li>
+                        <li>
+                            <p class="footer-text" href="http://scanfcode.com/category/back-end-development/">خوارزميات
+                                وهياكل البيانات</p>
+                        </li>
+                        <li>
+                            <p class="footer-text" href="http://scanfcode.com/category/java-programming-language/">
+                                معمارية الحاسوب</p>
+                        </li>
+                        <li>
+                            <p class="footer-text" href="http://scanfcode.com/category/java-programming-language/">الآمن
+                                السيبراني (قريباً)</p>
+                        </li>
+                    </ul>
+                </div>
 
-            <div class="col-xs-6 col-md-6" data-aos="fade-up">
-                <h6>روابط مختصرة</h6>
-                <ul class="footer-links second-section">
-                    <li><a href="https://app.learningcorner.net">الدورات</a></li>
-                    <li><a href="/public/pages/contact.html">تواصل</a></li>
-                    <li><a href="/public/pages/terms-and-conditions.html"> الشروط والأحكام</a></li>
-                    <li><a href="/public/pages/common-q.html">الأسئلة الشائعة</a></li>
-                    <li><a href="/public/pages/payment-method.html">وسائل الدفع</a></li>
-                </ul>
+                <div class="col-xs-6 col-md-6" data-aos="fade-up">
+                    <h6>روابط مختصرة</h6>
+                    <ul class="footer-links second-section">
+                        <li><a href="https://app.learningcorner.net">الدورات</a></li>
+                        <li><a href="/public/pages/contact.html">تواصل</a></li>
+                        <li><a href="/public/pages/terms-and-conditions.html"> الشروط والأحكام</a></li>
+                        <li><a href="/public/pages/common-q.html">الأسئلة الشائعة</a></li>
+                        <li><a href="/public/pages/payment-method.html">وسائل الدفع</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-sm-6 col-xs-12">
-                <p class="copyright-text"> Learn Corner جميع الحقوق محفوظة لدى &copy;
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text" dir="rtl"> جميع الحقوق محفوظة © 2024، Learning Corner with Bushra
+                    </p>
+                </div>
 
-                </p>
-            </div>
-
-            <div class="col-md-4 col-sm-6 col-xs-12 ">
-                <ul class="social-icons">
-                    <li><a class="instagram social-logo" target="_blank"
-                            href="https://www.instagram.com/boosh.asiri/"><svg xmlns="http://www.w3.org/2000/svg"
-                                height="16" width="14"
-                                viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
-                                <path
-                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
-                            </svg></a></li>
-                </ul>
+                <div class="col-md-4 col-sm-6 col-xs-12 ">
+                    <ul class="social-icons">
+                        <li><a class="instagram social-logo" target="_blank"
+                                href="https://www.instagram.com/boosh.asiri/"><svg xmlns="http://www.w3.org/2000/svg"
+                                    height="16" width="14"
+                                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                                    <path
+                                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                                </svg></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
 
 
