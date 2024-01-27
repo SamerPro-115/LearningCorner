@@ -1,8 +1,5 @@
 
 @media screen and (max-width: 1400px) {
-    #animation{
-     margin-top: 56px;
-    }
     .image-logo {
      right: 44.5%;
      top: 35%;
@@ -37,11 +34,6 @@
    }
    
    @media screen and (max-width: 1200px) {
-     #animation{
-       margin-top: 68px;
-       margin-left: -20px;
-       width: 116%;
-     }
      .nav-logo{
        text-align: left !important;
      }
@@ -64,9 +56,7 @@
      #third-col-card{
        margin-top: 80px
      }
-     #report-hosting{
-       width: 82% !important;
-     }
+     
      .fourth-card-container{
        width: 14%; 
      }
@@ -99,28 +89,21 @@
       margin-top: 100px;
   }
   .popup-container {
-    overflow-y: scroll; 
-    max-height: 100vh;
-     scrollbar-width: thin; /* For Firefox */
+    direction: ltr;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    padding-right: 17px;
+    border-radius: 0px;
+    box-sizing: content-box;
+    margin-top: 0px;
   }
-  /* Webkit browsers (Chrome, Safari) */
-  .popup-container::-webkit-scrollbar {
-    width: 12px;
-  }
-
-
-  .popup-container::-webkit-scrollbar-track {
-    background-color: whitesmoke; /* Change this to the desired background color for the scrollbar track */
-    border-radius: 4.3px;
-  }
+ 
   .fourth-card-offer{
     margin-top: 30px;
       margin-left: auto;
       margin-right: auto;
       width: 40%;
-  }
-  .popup-container {
-    margin-top: 5px;
   }
    .installments-pay-fourth-card{
     left: 24%;
@@ -131,6 +114,7 @@
     nav div .navbar-collapse .navbar-nav .nav-item .nav-link{
       font-size: 1rem;
     }
+    
     .navbar-nav{
       padding-right: 0px
     }
@@ -396,6 +380,9 @@
      .header{
        font-size: 1.6rem;
      }
+     .popup-container{
+      direction: unset;
+    }
      .header-description {
        font-size: 1.2rem;
    }

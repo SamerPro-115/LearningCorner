@@ -120,4 +120,16 @@ startCounterWhenVisible();
 
 
 
-
+ 
+   const navbar = document.querySelector('nav');
+   const scrollHeightThreshold = 90; // Set your desired scroll height
+   
+   window.onscroll = function() {
+       const currentScrollPos = window.pageYOffset;
+   
+       if (currentScrollPos > scrollHeightThreshold) {
+           navbar.classList.add('fixed-top');
+       } else {
+           navbar.classList.remove('fixed-top');
+       }
+   };

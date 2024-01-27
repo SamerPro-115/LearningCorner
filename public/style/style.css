@@ -69,13 +69,6 @@
  .navbar-nav{
   padding-right: 10px;
  }
- .learn-word{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1.25rem;
-    display: inline;
-    position: relative;
-    top: 16px;
- }
 
  .navbar-logo{
   width: 80px;
@@ -540,10 +533,8 @@ hr{
 .cards{
   transition: ease-in-out 0.3s;
   width: 95%;
-  margin: 10px;
   border-color: #ebebeb;
   border-radius: 1rem;
-  height: 100%;
 }
 .home-page-card{
   height: auto;
@@ -822,6 +813,7 @@ cursor: pointer;
 }
 .cards-offers .card-body{
   position: relative;
+  direction: rtl;
 }
 .installments-pay{
  top: 70%;
