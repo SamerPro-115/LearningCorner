@@ -61,13 +61,10 @@ startCounterWhenVisible();
     
     
 
-
    
 
 
-  function redirectToProductPage(productPageUrl) {
-    window.location.href = productPageUrl;
-  }
+  function redirectToProductPage(productPageUrl) {window.location.href = productPageUrl;}
 
   function openOverlay() {
     $(".overlay-popup").fadeIn(400)
