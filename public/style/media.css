@@ -98,17 +98,31 @@
     box-sizing: content-box;
     margin-top: 0px;
   }
- 
   .fourth-card-offer{
-    margin-top: 30px;
       margin-left: auto;
       margin-right: auto;
-      width: 40%;
   }
-   .installments-pay-fourth-card{
-    left: 24%;
+  .cards-offers{
+    width: 90%;
+  }
+  .third-collection-first-card,.fifth-collection-first-card{
+    margin-top: 24px;
+  }
+  
+  
    }
+
+
+   @media screen and (min-height: 1200px) {
+    .popup-container{
+   
+    height: auto;
+     overflow-y: auto;
+    border-radius: 20px;
+    margin-top: 3rem;
+    }
    }
+
    
    @media screen and (max-width: 992px) {
     nav div .navbar-collapse .navbar-nav .nav-item .nav-link{
@@ -242,13 +256,16 @@
   margin-top: 23px;
 }
 
-.third-card-offer {
+
+.fourth-card-offer {
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 30px;
+  width: 58%;
 }
-.fourth-card-offer{
- width: auto;
-    margin-left: 10px;
-    margin-right: 10px 
+.installments-pay{
+    left: 24%;
 }
 .offer-note{
   margin-bottom: 30px;
