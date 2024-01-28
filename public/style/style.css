@@ -722,9 +722,8 @@ box-shadow: none;
 .popup-container{
     background: whitesmoke;
     border-radius: 20px;
-    overflow-y: hidden; 
-    margin-top: 20px;
     width: 1100px;
+    direction: ltr;
     
 }
 .cards-offers{
@@ -780,6 +779,7 @@ cursor: pointer;
     font-size: 12px;
     text-align: right;
     margin-top: 10px;
+    margin-bottom: 40px;
 }
 .money-image{
   margin-right: 10px;
