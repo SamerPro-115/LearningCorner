@@ -146,7 +146,6 @@ section a{
 }
 .text-container{
   width: 100%;
-    margin-top: 14rem
 }
 .header{
   width: 100%;
@@ -727,6 +726,7 @@ box-shadow: none;
     border-radius: 20px;
     overflow-y: hidden; 
     margin-top: 20px;
+    width: 1100px;
     
 }
 .cards-offers{
@@ -761,7 +761,7 @@ cursor: pointer;
   
 }
 .card-title-offer{
-  padding: 18px;
+  padding-top: 13px;
   text-shadow: 0px 0px 1px rgba(0,0,0,0.6);
     color: #00e800;
 }
@@ -825,14 +825,14 @@ cursor: pointer;
   direction: rtl;
 }
 .installments-pay{
- top: 70%;
+ top: 74%;
     position: absolute;
     font-size: 0.9rem;
     left: 20%;
 }
-.installments-with-code{
-  left: 35%;
-  top: 60%
+.code-description{
+  font-weight: bold;
+  color: #8c20b4;
 }
 .counter-container{
   background: #e7e7e775;
@@ -840,5 +840,14 @@ cursor: pointer;
   margin-top: 100px;
   margin-bottom: 100px;
 }
-
+.third-card-offer .installments-pay{
+  top: 75%;
+}
+.discount-code-for-installments{
+  color: #8c20b4;
+  font-size: 0.85rem;
+}
+.pay-description-first-card-from-collection{
+  margin-top: 27px 
+}
 

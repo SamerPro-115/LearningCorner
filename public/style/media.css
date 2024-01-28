@@ -25,9 +25,6 @@
    .first-collection-last-card .card-body a, .first-collection-first-card .card-body a{
     margin-top: 0px;
    }
-   .installments-pay {
-    left: 17%;
-}
 .installments-with-code{
   left: 31%;
 }
@@ -108,9 +105,13 @@
   .third-collection-first-card,.fifth-collection-first-card{
     margin-top: 24px;
   }
+  .pay-description-first-card-from-collection{
+    margin-top: 23px 
+  }
   
   
    }
+ 
 
 
    @media screen and (min-height: 1200px) {
@@ -289,6 +290,17 @@
     border-bottom-right-radius: 0px;
     top: 15%;
 }
+.card .card-body{
+text-wrap: balance;
+}
+.card .code-description-mobile{
+width: 50%;
+margin-left: auto;
+margin-right: auto;
+}
+.large-cards{
+  margin-top: 3rem;
+}
    }
 
    @media screen and (max-width: 767px) {
@@ -402,6 +414,7 @@
     }
      .header-description {
        font-size: 1.2rem;
+       padding: 10px
    }
    .image {
      height: 330px;
@@ -513,6 +526,30 @@
        left: 0px;
        right: 0px;
      }
+   }
+   @media screen and (max-width: 399px) {
+.card .code-description-mobile {
+    width: unset;
+}
+.card .code-description{
+  font-size: 0.8rem;
+}
+.card-text-offer{
+  font-size: 1rem;
+}
+.installments-pay{
+  top: unset;
+}
+.third-card-offer .installments-pay {
+  top: 68%;
+}
+.installments-pay{
+  right: -5%;
+    width: 100%;
+}
+.card-text-offer {
+  margin-top: 0px; 
+}
    }
    
    
