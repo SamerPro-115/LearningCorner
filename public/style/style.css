@@ -525,9 +525,7 @@ hr{
 .card-img-top{
   border-radius: 1.8rem;
   padding: 15px;
-}
-.home-page-card .card-img-top{
-  height: 244px 
+  height: 250px
 }
 .cards{
   transition: ease-in-out 0.3s;
