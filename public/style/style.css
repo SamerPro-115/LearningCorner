@@ -529,9 +529,10 @@ hr{
 }
 .cards{
   transition: ease-in-out 0.3s;
-  width: 95%;
+  width: 450px;
   border-color: #ebebeb;
   border-radius: 1rem;
+  margin: auto;
 }
 .home-page-card{
   height: auto;
@@ -847,5 +848,12 @@ cursor: pointer;
 }
 .pay-description-first-card-from-collection{
   margin-top: 27px 
+}
+.edit-margin-installment-card-word{
+  margin-top: 21px;
+}
+.classes{
+  margin-right: 5px;
+  color: gray;
 }
 
