@@ -108,9 +108,6 @@
   .pay-description-first-card-from-collection{
     margin-top: 23px 
   }
-  .installments-pay {
-    left: 27%;
-}
   
   
    }
@@ -268,7 +265,7 @@
 }
 
 
-.fourth-card-offer, .third-card-offer {
+.fourth-card-offer {
   width: auto;
   margin-left: auto;
   margin-right: auto;
@@ -541,12 +538,6 @@ margin-right: auto;
    @media screen and (max-width: 399px) {
 .card .code-description-mobile {
     width: unset;
-}
-.card .code-description{
-  font-size: 0.8rem;
-}
-.card-text-offer{
-  font-size: 1rem;
 }
 .installments-pay{
   top: unset;

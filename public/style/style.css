@@ -723,7 +723,7 @@ box-shadow: none;
 .popup-container{
     background: whitesmoke;
     border-radius: 20px;
-    width: 870px;
+    width: 1100px;
     direction: ltr;
     
 }
@@ -741,6 +741,9 @@ cursor: pointer;
 }
 .second-card-offer{
   margin-left: unset;
+}
+.fourth-card-offer{
+  margin-right: unset;
 }
 .cards-offers:hover{
   transform: translateY(-10px);
@@ -811,6 +814,11 @@ cursor: pointer;
   color: gray;
   margin-top: 15px;
 }
+.second-card-offer .card-text-offer{
+  width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .contact-me-offer:hover{
   color: white !important;
@@ -829,6 +837,9 @@ cursor: pointer;
 .code-description{
   font-weight: bold;
   color: #8c20b4;
+  margin-left: auto;
+    margin-right: auto;
+    width: 200px;
 }
 .counter-container{
   background: #e7e7e775;
