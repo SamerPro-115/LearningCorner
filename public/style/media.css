@@ -108,6 +108,9 @@
   .pay-description-first-card-from-collection{
     margin-top: 23px 
   }
+  .installments-pay {
+    left: 27%;
+}
   
   
    }
@@ -265,7 +268,7 @@
 }
 
 
-.fourth-card-offer {
+.fourth-card-offer, .third-card-offer {
   width: auto;
   margin-left: auto;
   margin-right: auto;
