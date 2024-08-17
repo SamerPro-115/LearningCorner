@@ -202,6 +202,10 @@ ul li{
     z-index: 9999;
 }
 
+.popup-container>.offers-row> div:nth-child(1){
+    width: max-content;
+  }
+
 @media screen and (max-width: 992px) {
     .form{
         display: block;

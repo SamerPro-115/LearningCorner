@@ -69,6 +69,10 @@
     overflow-wrap: break-word;
 
 }
+
+.popup-container>.offers-row> div:nth-child(1){
+    width: max-content;
+  }
 @media screen and (max-width: 992px) {
     .bank-image{
         width: 500px;

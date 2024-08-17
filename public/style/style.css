@@ -474,7 +474,6 @@ hr{
 .social-icons a:active,.social-icons a:focus,.social-icons a:hover
 {
   color:#fff !important;
-  background-color:#29aafe
 }
 .social-icons.size-sm a
 {
@@ -483,22 +482,13 @@ hr{
   width:34px;
   font-size:14px
 }
-.social-icons a.facebook:hover
+
+
+.social-icons a.instagram:hover, .social-icons a.tiktok:hover
 {
-  background-color:#3b5998
+  background-color:#ea4c89 !important;
 }
-.social-icons a.twitter:hover
-{
-  background-color:#000000
-}
-.social-icons a.linkedin:hover
-{
-  background-color:#007bb6
-}
-.social-icons a.instagram:hover
-{
-  background-color:#ea4c89
-}
+
 @media (max-width:767px)
 {
   .social-icons li.title
@@ -725,7 +715,10 @@ box-shadow: none;
     border-radius: 20px;
     width: 1100px;
     direction: ltr;
-    
+    margin-top: 1rem;
+    overflow-y: auto;
+    max-height: 100vh;
+
 }
 .cards-offers{
   margin-left: auto;
@@ -757,6 +750,10 @@ cursor: pointer;
   margin-left: 0px;
   transition: ease-in-out 0.3s;
   
+}
+
+.popup-container>.offers-row> div:nth-child(1){
+  width: max-content;
 }
 .card-title-offer{
   padding-top: 13px;

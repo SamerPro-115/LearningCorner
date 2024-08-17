@@ -1,4 +1,4 @@
-.container {
+.common-q-container {
     margin: 0 auto;
     width: 48rem;
   }
@@ -109,6 +109,9 @@
     font-size: 1rem;
     font-weight: 300;
     margin: 2em 0;
+  }
+  .popup-container>.offers-row> div:nth-child(1){
+    width: max-content;
   }
 
 
