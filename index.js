@@ -130,6 +130,8 @@ startCounterWhenVisible();
            navbar.classList.remove('fixed-top');
        }
    };
+
+   
    
 
 
