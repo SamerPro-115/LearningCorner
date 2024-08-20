@@ -1,166 +1,4 @@
- *{
-    font-family: 'Cairo', sans-serif !important;
-   
- }
- body{
-    background: #f9f9f9  !important;
- }
- html{
-  overflow-x: hidden;
- }
- a{
-    text-decoration: none !important;
- }
- .container{
-  --bs-gutter-x: 0px;
- }
- .row{
-  --bs-gutter-x: 0px
- }
- ::selection{
-    background: #f6ca06;
-    color: rgb(0, 0, 0);
-    height: 10px !important;
-    width: 10px !important;
- }
- ::-webkit-scrollbar {
-    width: 12px;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: #939393; 
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: #f9f9f9  ; 
-  }
- .container-fluid{
-    animation-duration: 0.5s;
- }
- .navbar{
-  padding-top: 1.5rem!important;
-    padding-bottom: 1.5rem!important;
-  width: 100%;
-    height: 100px;
-    background: #f9f9f9;
-    border-bottom: 1px solid rgba(222, 217, 217, 0.67);
- }
- .container-fluid{
-  margin-right: 0px;
-  margin-left: 0px;
- }
- .navbar-brand{
-    transition: 0.3s ease-in-out;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    background: #edededc2;
-    border-radius: 100px;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem; 
-    font-size: 1rem;
-    color: black !important;
- }
- .navbar-brand:hover{
-  background: #ffbf01;
-  opacity: 0.8;
-  font-size: 0.8rem;
-  font-weight: bold;
- }
- .navbar-nav{
-  padding-right: 10px;
- }
 
- .navbar-logo{
-  width: 80px;
-  margin-right: 23px;
- }
- .nav-link{
-    font-size: 1.10rem;
- }
- .nav-btn{
-  transition: 0.3s ease-in-out;
-  padding-left: 1.5rem !important;
-  padding-right: 1.5rem !important;
-  background: #edededc2;
-  border-radius: 100px;
-  padding-top: 0.5rem !important;
-  padding-bottom: 0.5rem !important; 
-  font-size: 1rem;
-  color: black !important;
-  line-height: 1.8;
- }
- .nav-btn:hover{
-  background: #ffbf01;
-  opacity: 0.8;
-  font-size: 0.8rem;
-  font-weight: bold;
-}
-.login{
-  margin-left: 20px;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  padding-top: 0.375rem;
-  padding-bottom: 0.375rem; 
-  color:white;
-  background: #940d9a;
-  border-radius: 0.5rem 
-}
-.login:hover{
-  background: #7f0d84;
-}
-.nav-btn-mobile{
-  padding: 1.3rem;
-}
-.btn-close{
-  padding: 11px !important;
-    border-radius: 20px;
-    background-color: #940d9a;
-    opacity: 1;
-    background-size: 13px;
-    box-shadow: none !important;
-    --bs-btn-close-bg: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="%23ffffff"%3e%3cpath d="M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z"/%3e%3c/svg%3e'); /* White color */
-
-}
-.nav-btn-mobile{
-  background:  #edededc2;
-}
-.new-word-offer{
-  right: 15%;
-    left: 27%;
-    position: absolute;
-    top: 0%;
-    font-size: 0.5rem;
-    color: white;
-    text-align: center;
-    width: 65%;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    background-color: #ffbc04;
-    transition: background-color 0.5s ease; /* Add transition property */
-
-}
-section a{
-  margin-left: auto;
-    margin-right: auto;
-    width: max-content;
-}
-.text-container{
-  width: 100%;
-}
-.header{
-  width: 100%;
-  text-align: right;
-  font-size: 2.5rem;
-  font-weight: bold;
-  word-spacing: 0.2rem
-}
-.header-description{
-  text-align: right;
-  font-size: 1.8rem;
-}
-.auto-type{
-    color: #8c20b4;
-}
 .line-sap{
     margin-left: auto;
     margin-right: auto;
@@ -513,21 +351,8 @@ section a{
   font-weight: bold;
   text-align: right;
 }
-.card-img-top{
-  border-radius: 1.8rem;
-  padding: 15px;
-  height: 250px
-}
-.cards{
-  transition: ease-in-out 0.3s;
-  width: 450px;
-  border-color: #ebebeb;
-  border-radius: 1rem;
-  margin: auto;
-}
-.home-page-card{
-  height: auto;
-}
+
+
 .pay{
   background:#940d9a;
   color: white;
@@ -840,7 +665,7 @@ cursor: pointer;
     width: 200px;
 }
 .counter-container{
-  background-image: url(/public/images/texture-bg.jpg);
+  background-image: url(/public/images/texture-bg.webp);
   padding-bottom: 2.5rem;
 background-position: center;
 background-size: cover;
@@ -862,9 +687,7 @@ background-size: cover;
   margin-right: 5px;
   color: gray;
 }
-.home-page-card{
-  width: 90%;
-}
+
 
 
 .orange-watercolor{
@@ -898,11 +721,7 @@ background-size: cover;
   overflow: hidden;
   border-radius: 25px;
 }
-.card{
-  border-radius: 25px;
-  background-color: #FFF;
-  border: 0;
-}
+
 .image-content,
 .card-content{
   display: flex;

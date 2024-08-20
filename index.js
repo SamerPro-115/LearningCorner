@@ -1,11 +1,5 @@
 
 
-// const currentPath = window.location.pathname;
-// if(currentPath === "/") {
-
-// }
-
-
 
 
 
