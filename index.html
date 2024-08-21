@@ -48,8 +48,14 @@
     <style>
         * {
             font-family: 'Cairo', sans-serif !important;
-
         }
+        .header-container {
+            position: relative;
+            background-image: url(/public/images/image-header.webp);
+            height: 100vh;
+            background-position: center;
+            background-size: cover;
+          }
 
         body {
             background: #f9f9f9 !important;
@@ -68,7 +74,7 @@
         }
 
         .row {
-            --bs-gutter-x: 0px
+            --bs-gutter-x: 0px !important;
         }
 
         ::selection {
@@ -215,19 +221,17 @@
 
         .header {
             width: 100%;
-            text-align: right;
-            font-size: 2.5rem;
-            font-weight: bold;
-            word-spacing: 0.2rem
+            font-size: 3rem;
+            word-spacing: 0.2rem;
         }
 
         .header-description {
-            text-align: right;
-            font-size: 1.8rem;
+          
+            font-size: 2rem;
         }
 
         .auto-type {
-            color: #8c20b4;
+            color: #ffbb21;
         }
 
         .card-img-top {
@@ -257,19 +261,84 @@
             margin-left: auto;
             margin-right: auto;
         }
+        .button {
+            margin-top: 30px;
+            cursor: pointer;
+            position: relative;
+            padding: 10px 24px;
+            font-size: 18px;
+            color: #ffbb21;
+            border: 2px solid #ffbb21;
+            border-radius: 5px;
+            background-color: transparent !important;
+            font-weight: 600;
+            transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+            overflow: hidden;
+          }
+      
+          .button::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            margin: auto;
+            width: 50px;
+            height: 50px;
+            border-radius: inherit;
+            scale: 0;
+            z-index: -1;
+            background-color: #940d9a;
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+          }
+      
+          .button:hover::before {
+            scale: 4.2;
+          }
+      
+          .button:hover {
+            color: #ffffff;
+            scale: 1.1;
+            box-shadow: 0 0px 20px #ffbb21;
+            border: 2px solid #940d9a ;
 
-        @media screen and (min-width: 1200px) {
-            #animation {
-                width: 600px !important;
-                height: 600px !important;
-            }
-        }
+          }
+      
+          .button:active {
+            scale: 1;
+          }
+         
+          
+          .header-container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: inherit;
+            background-size: inherit;
+            background-position: inherit;
+            filter: brightness(50%);
+            z-index: 1;
+          }
+          
+          #first-section {
+            position: absolute;
+            z-index: 2;
+            color: white;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 75%;
+            text-wrap: balance;
+          }
 
+       
         @media screen and (max-width: 1200px) {
-            #animation {
-                width: 450px !important;
-                height: 450px !important;
-            }
+            #first-section{
+                width: 80%;
+                text-wrap: unset;
+              }
         }
 
         @media screen and (max-width: 992px) {
@@ -286,35 +355,40 @@
                 width: 95%;
                 margin-top: 30px;
             }
+            #first-section{
+                width: 95%;
+            }
+            .header-container {
+                background-image: url(/public/mobile-img/image-header.webp);
+              }
+              .header-container::before{
+                filter: brightness(40%);
+
+              }
         }
 
-        @media screen and (max-width: 568px) {
+        @media screen and (max-width: 578px) {
             .header {
                 font-size: 1.6rem;
             }
         }
     </style>
 
-    <script></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
     integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
     crossorigin="anonymous"  referrerpolicy="no-referrer" defer></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous" defer></script>
 
 
-    <link rel="stylesheet" href="/public/style/style.css" rel="preload" as="style"
-        onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="stylesheet" href="/public/style/media.css" rel="preload" as="style"
-        onload="this.onload=null;this.rel='stylesheet'">
-
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"
         integrity="sha512-tQQXRDB2wEmuJGtFrmmoFYzNTq8StA1XJrfO0OQbbTxd9G0CwaTDL6/C1y805IlvBVrMwOqob1kf6r/2U5XXVg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        crossorigin="anonymous"  referrerpolicy="no-referrer"></script>
 
  
 
@@ -322,6 +396,12 @@
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="/public/style/style.css" rel="preload" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="/public/style/media.css" rel="preload" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+
     <title>ركن التعلّم</title>
 </head>
 
@@ -503,32 +583,23 @@
         </div>
     </div>
 
-    <div style="background-image: url(/public/images/image-header.jpg);">
-        <div class="container" id="first-section" >
-            <div class="row">
-                <!-- Canvas and Image Column -->
-                <div class="col-lg-6 col-md-12 col-sm-12 mb-5  order-lg-1 order-2">
-                    <!-- <img class="mobile-header" width="80%"
-                    src="/public/images/image-header.jpg" alt="tech header"> -->
-                </div>
-                <!-- Text Column -->
-                <div
-                    class="col-lg-6 col-md-12 col-sm-12 mt-5 mb-5 d-flex align-items-center justify-content-center order-lg-2 order-1">
-                    <div class="text-container text-center" dir="rtl">
-                        <h1 class="header"> <span>تعلّم</span> <span class="auto-type"></span></h1>
-                        <h4 class="header-description">
-                            في ركن التعلم أفهم تمامًا تحديات الحياة الجامعية اللي تمر بها وضغوطات المناهج الدراسية. أنا بشرى
-                            , احرص ان اكون
-                            شريكة رحلتك التعليمية وأساهم في تحقيق نجاحك الأكاديمي.
-                        </h4>
-                    </div>
-                </div>
+    <div class="header-container">
+        <div id="first-section">
+            <div class="text-container text-center" dir="rtl">
+                <h1 class="header"> <span>تعلّم</span> <span class="auto-type"></span></h1>
+                <h4 class="header-description">
+                    في ركن التعلم أفهم تمامًا تحديات الحياة الجامعية اللي تمر بها وضغوطات المناهج الدراسية. أنا بشرى
+                    , احرص ان اكون
+                    شريكة رحلتك التعليمية وأساهم في تحقيق نجاحك الأكاديمي.
+                </h4>
+                <button onclick="window.location.href = '/public/pages/request-quote.html'" aria-label="request quote button"
+                class="button">
+                عرض الدورات
+              </button>
             </div>
         </div>
-
     </div>
     
-
 
 
 
@@ -1081,13 +1152,13 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/index.js" defer></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
-    <script type="module">
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js" ></script>
+    <script>
         AOS.init();
-
         var swiper = new Swiper(".slide-content", {
             slidesPerView: 3,
             spaceBetween: 25,
@@ -1104,7 +1175,7 @@
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
-
+      
             breakpoints: {
                 0: {
                     slidesPerView: 1,
@@ -1117,15 +1188,14 @@
                 },
             },
         });
-
+      
         var typed = new Typed('.auto-type', {
             strings: ['البرمجة !', "الخوارزميات وهياكل البيانات", "معمارية الحاسوب !", "المعالجات الصغيرة ولغة التجميع"],
             typeSpeed: 75,
             backSpeed: 30,
             loop: true
         });
-
+      
     </script>
 </body>
-
 </html>

@@ -49,11 +49,12 @@ startCounterWhenVisible();
       
       $(this).find("path").toggleClass("white-logo")
     })
-    
+
+
 
     
-    
 
+   
    
 
 
