@@ -2,7 +2,6 @@
 
 
 
-
 function startCounterWhenVisible() {
   var options = {
     threshold: 0.5, 

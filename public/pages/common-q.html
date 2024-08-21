@@ -20,7 +20,6 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    
     <meta name="description"
     content="الأسئلة الشائعة الخاصة بمنصة ركن التعلم">
 <meta name="keywords"
@@ -35,47 +34,345 @@
 <meta name="twitter:title" content="Learn Corner">
 <meta name="twitter:description"
     content="الأسئلة الشائعة الخاصة بمنصة ركن التعلم">
-
 <meta name="twitter:image" content="/public/images/logo.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo&family=IBM+Plex+Sans+Arabic&display=swap"
+    rel="stylesheet">
+
+<style>
+    h2{
+        padding-right: 20px;
+    }
+    p{
+        padding-right: 20px;
+    }
+
+    * {
+        font-family: 'Cairo', sans-serif !important;
+
+    }
+
+    body {
+        background: #f9f9f9 !important;
+    }
+
+    html {
+        overflow-x: hidden;
+    }
+
+    a {
+        text-decoration: none !important;
+    }
+
+    .container {
+        --bs-gutter-x: 0px !important;
+    }
+
+    .row {
+        --bs-gutter-x: 0px
+    }
+
+    ::selection {
+        background: #f6ca06;
+        color: rgb(0, 0, 0);
+        height: 10px !important;
+        width: 10px !important;
+    }
+
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #939393;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #f9f9f9;
+    }
+
+    .container-fluid {
+        animation-duration: 0.5s;
+    }
+
+    .navbar {
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
+        width: 100%;
+        height: 100px;
+        background: #f9f9f9;
+        border-bottom: 1px solid rgba(222, 217, 217, 0.67);
+    }
+
+    .container-fluid {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .nav-link {
+        font-size: 1.10rem;
+        background: #edededc2 !important;
+    }
+
+    .navbar-brand {
+        transition: 0.3s ease-in-out !important;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        background: #edededc2;
+        border-radius: 100px;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        font-size: 1rem;
+        color: black !important;
+    }
+
+    .navbar-brand:hover {
+        background: #ffbf01;
+        opacity: 0.8;
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+
+    .navbar-nav {
+        padding-right: 10px;
+    }
+
+    .navbar-logo {
+        width: 80px;
+        margin-right: 23px;
+    }
+
+    .nav-btn {
+        transition: 0.3s ease-in-out !important;
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+        background: #edededc2;
+        border-radius: 100px;
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+        font-size: 1rem;
+        color: black !important;
+        line-height: 1.8;
+    }
+
+    .nav-btn:hover {
+        background: #ffbf01 !important;
+        opacity: 0.8;
+        font-size: 0.8rem !important;
+        font-weight: bold;
+    }
+
+    .login {
+        margin-left: 20px;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        padding-top: 0.375rem;
+        padding-bottom: 0.375rem;
+        color: white;
+        background: #940d9a;
+        border-radius: 0.5rem
+    }
+
+    .login:hover {
+        background: #7f0d84;
+    }
+
+    .nav-btn-mobile {
+        padding: 1.3rem !important;
+    }
+
+    .btn-close {
+        padding: 11px !important;
+        border-radius: 20px;
+        background-color: #940d9a;
+        opacity: 1;
+        background-size: 13px;
+        box-shadow: none !important;
+        --bs-btn-close-bg: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="%23ffffff"%3e%3cpath d="M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z"/%3e%3c/svg%3e');
+        /* White color */
+
+    }
+
+    .new-word-offer {
+        right: 15%;
+        left: 27%;
+        position: absolute;
+        top: 0%;
+        font-size: 0.5rem;
+        color: white;
+        text-align: center;
+        width: 65%;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        background-color: #ffbc04;
+        transition: background-color 0.5s ease;
+        /* Add transition property */
+
+    }
+
+    .common-q-container {
+        margin: 0 auto;
+        width: 48rem !important;
+      }
+      .accordion{
+        box-shadow: -4px 0px 24px -12px rgba(27,27,27,0.39) inset;
+    -webkit-box-shadow: -4px 0px 24px -12px rgba(27,27,27,0.39) inset;
+    -moz-box-shadow: -4px 0px 24px -12px rgba(27,27,27,0.39) inset;
+      }
+      .accordion-item {
+        border-bottom: 1px solid #ccc;
+        background: #ffda721f !important;
+      }
+      
+      .accordion-item button[aria-expanded='true'] {
+        border-bottom: 1px solid #7f0d84;
+      }
+      
+      .accordion button {
+        position: relative;
+        display: block;
+        text-align: right;
+        width: 100%;
+        padding: 1em 0;
+        color: #000;
+        font-size: 1.15rem;
+        font-weight: 400;
+        border: none;
+        background: none;
+        outline: none;
+      }
+      
+      .accordion button:hover,
+      .accordion button:focus {
+        cursor: pointer;
+        color: #7f0d84;
+      }
+      
+      .accordion button:hover::after,
+      .accordion button:focus::after {
+        cursor: pointer;
+        color: #7f0d84;
+        border: 1px solid #7f0d84;
+      }
+      
+      .accordion button .accordion-title {
+        padding: 1em 1.5em 1em 0;
+        font-weight: bold;
+      }
+      
+      .accordion button .icon {
+        display: inline-block;
+        position: absolute;
+        top: 18px;
+        left: 20px;
+        width: 22px;
+        height: 22px;
+        border: 2px solid;
+        border-radius: 22px;
+      }
+      
+      .accordion button .icon::before {
+        display: block;
+        position: absolute;
+        content: '';
+        top: 9px;
+        left: 5px;
+        width: 10px;
+        height: 2px;
+        background: currentColor;
+      }
+      
+      .accordion button .icon::after {
+        display: block;
+        position: absolute;
+        content: '';
+        top: 5px;
+        left: 9px;
+        width: 2px;
+        height: 10px;
+        background: currentColor;
+      }
+      
+      .accordion button[aria-expanded='true'] {
+        color: #7f0d84;
+      }
+      
+      .accordion button[aria-expanded='true'] .icon::after {
+        width: 0;
+      }
+      
+      .accordion button[aria-expanded='true'] + .accordion-content {
+        opacity: 1;
+        max-height: 9em;
+        transition: all 200ms linear;
+        will-change: opacity, max-height;
+      }
+      
+      .accordion-content {
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: opacity 200ms linear, max-height 200ms linear;
+        will-change: opacity, max-height;
+        text-align: right;
+      }
+      
+      .accordion-content p {
+        font-size: 1rem;
+        font-weight: 300;
+        margin: 2em 0;
+      }
+      .popup-container>.offers-row> div:nth-child(1){
+        width: max-content;
+      }
+
+      @media screen and (max-width: 992px) {
+        .mobile-new-word-offer {
+            right: 0%;
+            width: 85px;
+            border-bottom-right-radius: 0px;
+            top: 15%;
+        }
+      }
+    
+    
+      @media screen and (max-width: 578px) {
+        .container{
+          width: 100%;
+        }
+        .accordion-title{
+          width: 80%;
+        display: block;
+        padding-right: 10px;
+        }
+      }
+    
+      
+</style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" defer
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" defer
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/public/style/style.css">
-    <link rel="stylesheet" href="/public/style/media.css">
-    <link rel="stylesheet" href="/public/style/common-q.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo&family=IBM+Plex+Sans+Arabic&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+        <link rel="stylesheet" href="/public/style/style.css" rel="preload" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
     <title>  الأسئلة الشائعة  </title>
 </head>
 <body>
-    
-    <style>
-        h2{
-            padding-right: 20px;
-        }
-        p{
-            padding-right: 20px;
-        }
-    </style>
+
+
+   
 
    
     <nav class="navbar navbar-expand-md" dir="rtl">
         <div class="container-fluid">
             <div class="nav-logo display-mid-nav" dir="rtl">
-                <img class="navbar-logo navbar-logo-mid" src="/public/images/logo.png" alt="Logo">
+                <img class="navbar-logo navbar-logo-mid" src="/public/images/logo.webp" alt="Logo">
             </div>
             <a class="navbar-brand d-xl-block d-lg-block d-md-none d-none" href="/index.html">الرئيسية</a>
             <div class="collapse d-xl-block d-lg-block d-md-none" style="margin-left: auto;" id="navbarNav">
@@ -215,7 +512,7 @@
                 </svg>
                 </div>
                 <h1 class="text-center fw-bold" dir="rtl" style="color: #8c20b4;">العروض <span><img
-                            src="/public/images/money.png" class="money-image" alt="money">
+                            src="/public/images/money.webp" class="money-image" alt="money">
                     </span></h1>
 
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 text-center">
@@ -223,7 +520,7 @@
                         onclick="redirectToProductPage('https://learningcorner.net/public/pages/installments')">
                         <h3 class="card-title-offer">عرض التسجيل المبّكر</h3>
                         <h5 dir="rtl"><span class="old-price">349</span> <span class="new-price fw-bold">289 SAR</span></h5>
-                        <img src="/public/images/limited-time.png" class="image-offers" alt="Placeholder Image">
+                        <img src="/public/images/limited-time.webp" class="image-offers" alt="Placeholder Image">
                         <div class="card-body">
                             <p class="card-text-offer">
                                 <span>أختر أي مقرر وأستفد من العرض </span>
@@ -244,7 +541,7 @@
                         onclick="redirectToProductPage('https://learningcorner.net/public/pages/installments')">
                         <h3 class="card-title-offer">عرض الإشتراك بمقررين</h3>
                         <h5 dir="rtl"><span class="old-price">698</span> <span class="new-price fw-bold">614 SAR</span></h5>
-                        <img src="/public/images/2-books.png" class="image-offers" alt="Placeholder Image">
+                        <img src="/public/images/2-books.webp" class="image-offers" alt="Placeholder Image">
                         <div class="card-body">
                             <p class="card-text-offer">
                                 <span>أختر أي مقررين وأحصل على خصمك الخاص</span>
@@ -264,7 +561,7 @@
                         onclick="redirectToProductPage('https://learningcorner.net/public/pages/installments')">
                         <h3 class="card-title-offer">عرض الإشتراك بثلاث مقررات</h3>
                         <h5 dir="rtl"><span class="old-price">1047</span> <span class="new-price fw-bold">875 SAR</span></h5>
-                        <img src="/public/images/3-books.png" class="image-offers" alt="Placeholder Image">
+                        <img src="/public/images/3-books.webp" class="image-offers" alt="Placeholder Image">
                         <div class="card-body">
                             <p class="card-text-offer">
                                 <span>أختر أي ثلاث مقررات وأحصل على خصمك الخاص</span>
@@ -340,7 +637,7 @@
 
             <div class="col-md-4 col-sm-6 col-xs-12 ">
                 <ul class="social-icons">
-                    <li><a class="instagram social-logo" target="_blank"
+                    <li><a aria-label="Instagram" class="instagram social-logo" target="_blank"
                             href="https://www.instagram.com/learncorner20/"><svg xmlns="http://www.w3.org/2000/svg"
                                 height="16" width="14"
                                 viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
@@ -348,7 +645,7 @@
                                     d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
                             </svg></a></li>
 
-                            <li><a class="tiktok social-logo" target="_blank"
+                            <li><a aria-label="TikTok" class="tiktok social-logo" target="_blank"
                                 href="https://www.tiktok.com/@learncorner20"><svg height="16" width="14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"/></svg></a></li>
                 </ul>
             </div>
@@ -357,12 +654,7 @@
 </footer>
 
 
-    <script src="/index.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-
+    <script src="/index.js" defer></script>
     <script>
         const items = document.querySelectorAll(".accordion button");
 

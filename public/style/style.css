@@ -346,11 +346,6 @@
 }
 
 
-.installment-works-word{
-  color: #910bab;
-  font-weight: bold;
-  text-align: right;
-}
 
 
 .pay{
@@ -544,6 +539,7 @@ box-shadow: none;
     margin-top: 1rem;
     overflow-y: auto;
     max-height: 100vh;
+    overflow-x: hidden;
 
 }
 .cards-offers{

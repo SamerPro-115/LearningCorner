@@ -31,7 +31,7 @@
     <meta property="og:description"
         content="ركن التعلم... رفيقك في النجاح .. ومساعدك في التفوق الأكاديمي ... لمواد الحاسب الآلي ... حياك معنا وفالك الA+ يابطل 😍"
         dir="rtl">
-    <meta property="og:image" content="https://learningcorner.net/public/images/logo.png">
+    <meta property="og:image" content="https://learningcorner.net/public/images/webp.png">
     <meta property="og:url" content="https://learningcorner.net">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
@@ -39,9 +39,7 @@
     <meta name="twitter:description"
         content="ركن التعلم... رفيقك في النجاح .. ومساعدك في التفوق الأكاديمي ... لمواد الحاسب الآلي ... حياك معنا وفالك الA+ يابطل 😍"
         dir="rtl">
-    <meta name="twitter:image" content="https://learningcorner.net/public/images/logo.png">
-
-
+    <meta name="twitter:image" content="https://learningcorner.net/public/images/webp.png">
     <!-- Critcal CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -235,6 +233,7 @@
         .card-img-top {
             border-radius: 1.8rem;
             padding: 15px;
+            height: 250px;
         }
 
         .cards {
@@ -296,9 +295,18 @@
         }
     </style>
 
+    <script></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous"  referrerpolicy="no-referrer" defer></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous" defer></script>
+
+
     <link rel="stylesheet" href="/public/style/style.css" rel="preload" as="style"
         onload="this.onload=null;this.rel='stylesheet'">
     <link rel="stylesheet" href="/public/style/media.css" rel="preload" as="style"
@@ -308,23 +316,12 @@
         integrity="sha512-tQQXRDB2wEmuJGtFrmmoFYzNTq8StA1XJrfO0OQbbTxd9G0CwaTDL6/C1y805IlvBVrMwOqob1kf6r/2U5XXVg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-        crossorigin="anonymous" defer referrerpolicy="no-referrer"></script>
+ 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-
-
-
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <title>ركن التعلّم</title>
 </head>
 
@@ -506,45 +503,31 @@
         </div>
     </div>
 
-    <div class="container" id="first-section">
-        <div class="row">
-            <!-- Canvas and Image Column -->
-            <div class="col-lg-6 col-md-12 col-sm-12 mb-5  order-lg-1 order-2">
-                <canvas id="animation" class="d-xl-block d-lg-block d-none"></canvas>
-                <script type="module">
-                    import { DotLottie } from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
-
-                    const animation = document.getElementById("animation")
-                    const screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-                    if (screenWidth > 992) {
-                        new DotLottie({
-                            autoplay: true,
-                            loop: true,
-                            canvas: animation,
-                            src: "https://lottie.host/b5f0133b-fff2-4394-9815-d9061e48c47f/bDJX37pUj8.json", // or .json file
-                        });
-
-                    }
-
-                </script>
-                <img class="d-xl-none d-lg-none d-block mobile-header" width="80%"
-                    srcset="/public/mobile-img/mobile-image-header.webp, /public/mobile-img/mobile-image-header2.webp 579w"
-                    src="/public/mobile-img/mobile-image-header.webp" alt="tech header">
-            </div>
-            <!-- Text Column -->
-            <div
-                class="col-lg-6 col-md-12 col-sm-12 mt-5 mb-5 d-flex align-items-center justify-content-center order-lg-2 order-1">
-                <div class="text-container text-center" dir="rtl">
-                    <h1 class="header"> <span>تعلّم</span> <span class="auto-type"></span></h1>
-                    <h4 class="header-description">
-                        في ركن التعلم أفهم تمامًا تحديات الحياة الجامعية اللي تمر بها وضغوطات المناهج الدراسية. أنا بشرى
-                        , احرص ان اكون
-                        شريكة رحلتك التعليمية وأساهم في تحقيق نجاحك الأكاديمي.
-                    </h4>
+    <div style="background-image: url(/public/images/image-header.jpg);">
+        <div class="container" id="first-section" >
+            <div class="row">
+                <!-- Canvas and Image Column -->
+                <div class="col-lg-6 col-md-12 col-sm-12 mb-5  order-lg-1 order-2">
+                    <!-- <img class="mobile-header" width="80%"
+                    src="/public/images/image-header.jpg" alt="tech header"> -->
+                </div>
+                <!-- Text Column -->
+                <div
+                    class="col-lg-6 col-md-12 col-sm-12 mt-5 mb-5 d-flex align-items-center justify-content-center order-lg-2 order-1">
+                    <div class="text-container text-center" dir="rtl">
+                        <h1 class="header"> <span>تعلّم</span> <span class="auto-type"></span></h1>
+                        <h4 class="header-description">
+                            في ركن التعلم أفهم تمامًا تحديات الحياة الجامعية اللي تمر بها وضغوطات المناهج الدراسية. أنا بشرى
+                            , احرص ان اكون
+                            شريكة رحلتك التعليمية وأساهم في تحقيق نجاحك الأكاديمي.
+                        </h4>
+                    </div>
                 </div>
             </div>
         </div>
+
     </div>
+    
 
 
 
@@ -563,8 +546,8 @@
             <div class="col-xl-4 col-lg-4 col-md-12">
                 <div class="card cards home-page-card"
                     onclick="redirectToProductPage('https\:\/\/app.learningcorner.net/courses/معمارية-وتنظيم-الحاسبات-عال-251-الجزء-الأول-1705950530')">
-                    <img class="card-img-top" height="250px" width="8%"
-                        srcset="/public/images/comp-art.webp 1x, /public/mobile-img/comp-art.webp 992w, /public/mobile-img/comp-art-sm.webp 579w"
+                    <img class="card-img-top" height="250px" 
+                        srcset="/public/images/comp-art.webp, /public/mobile-img/comp-art.webp 579w"
                         src="/public/images/comp-art.webp" alt="معمارية وتنظيم الحاسبات">
                     <div class="card-body">
                         <div class="container">
@@ -618,7 +601,7 @@
                 <div class="card cards home-page-card"
                     onclick="redirectToProductPage('https\:\/\/app.learningcorner.net/courses/البرمجة-الغرضية-الموجهة-1705764347')">
                     <img class="card-img-top" height="250px"
-                    srcset="/public/images/programming.webp, /public/mobile-img/programming.webp 992w, /public/mobile-img/programming-sm.webp 579w"
+                    srcset="/public/images/programming.webp, /public/mobile-img/programming.webp 579w"
                     width="8%" src="/public/images/programming.webp"
                         alt="البرمجة الغرضية الموجهة">
                     <div class="card-body">
@@ -673,7 +656,7 @@
                 <div class="card cards home-page-card"
                     onclick="redirectToProductPage('https\:\/\/app.learningcorner.net/courses/خوارزميات-وهياكل-البيانات-1700574797')">
                     <img height="250px" width="8%" class="card-img-top"
-                    srcset="/public/images/data-course.webp, /public/mobile-img/data.webp 992w, /public/mobile-img/data-sm.webp 579w"
+                    srcset="/public/images/data-course.webp, /public/mobile-img/data.webp 579w"
                     src="/public/images/data-course.webp" alt="خوارزميات وهياكل البيانات">
                     <div class="card-body">
                         <div class="container">
@@ -749,61 +732,61 @@
                 <div class="card-wrapper swiper-wrapper">
                     <div class="card swiper-slide">
                         <div class="image-content">
-                            <img loading="lazy" src="/public/images/students-1.webp" class="reviews" alt="review 1">
+                            <img loading="lazy" src="/public/images/students-1.webp" srcset="/public/images/students-1.webp, /public/mobile-img/students-1.webp 579w" class="reviews" alt="review 1">
 
                         </div>
                     </div>
                     <div class="card swiper-slide">
                         <div class="image-content">
-                            <img loading="lazy" src="/public/images/students-2.webp" class="reviews" alt="review 2">
+                            <img loading="lazy" src="/public/images/students-2.webp" srcset="/public/images/students-2.webp, /public/mobile-img/students-2.webp 579w" class="reviews" alt="review 2">
 
                         </div>
                     </div>
                     <div class="card swiper-slide">
                         <div class="image-content">
-                            <img loading="lazy" src="/public/images/students-3.webp" class="reviews" alt="review 3">
+                            <img loading="lazy" src="/public/images/students-3.webp" srcset="/public/images/students-3.webp, /public/mobile-img/students-3.webp 579w"  class="reviews" alt="review 3">
 
                         </div>
                     </div>
                     <div class="card swiper-slide">
                         <div class="image-content">
-                            <img loading="lazy" src="/public/images/students-4.webp" class="reviews" alt="review 4">
+                            <img loading="lazy" src="/public/images/students-4.webp" srcset="/public/images/students-4.webp, /public/mobile-img/students-4.webp 579w"  class="reviews" alt="review 4">
 
                         </div>
                     </div>
                     <div class="card swiper-slide">
                         <div class="image-content">
-                            <img loading="lazy" src="/public/images/students-5.webp" class="reviews" alt="review 5">
+                            <img loading="lazy" src="/public/images/students-5.webp" srcset="/public/images/students-5.webp, /public/mobile-img/students-5.webp 579w"  class="reviews" alt="review 5">
 
                         </div>
                     </div>
                     <div class="card swiper-slide">
                         <div class="image-content">
-                            <img loading="lazy" src="/public/images/students-6.webp" class="reviews" alt="review 6">
+                            <img loading="lazy" src="/public/images/students-6.webp" srcset="/public/images/students-6.webp, /public/mobile-img/students-6.webp 579w"  class="reviews" alt="review 6">
 
                         </div>
                     </div>
                     <div class="card swiper-slide">
                         <div class="image-content">
-                            <img loading="lazy" src="/public/images/students-7.webp" class="reviews" alt="review 7">
+                            <img loading="lazy" src="/public/images/students-7.webp" srcset="/public/images/students-7.webp, /public/mobile-img/students-7.webp 579w"  class="reviews" alt="review 7">
 
                         </div>
                     </div>
                     <div class="card swiper-slide">
                         <div class="image-content">
-                            <img loading="lazy" src="/public/images/students-8.webp" class="reviews" alt="review 8">
+                            <img loading="lazy" src="/public/images/students-8.webp" srcset="/public/images/students-8.webp, /public/mobile-img/students-8.webp 579w"  class="reviews" alt="review 8">
 
                         </div>
                     </div>
                     <div class="card swiper-slide">
                         <div class="image-content">
-                            <img loading="lazy" src="/public/images/students-9.webp" class="reviews" alt="review 9">
+                            <img loading="lazy" src="/public/images/students-9.webp" srcset="/public/images/students-9.webp, /public/mobile-img/students-9.webp 579w"  class="reviews" alt="review 9">
 
                         </div>
                     </div>
                     <div class="card swiper-slide">
                         <div class="image-content">
-                            <img loading="lazy" src="/public/images/students-10.webp" class="reviews" alt="review 10">
+                            <img loading="lazy" src="/public/images/students-10.webp" srcset="/public/images/students-10.webp, /public/mobile-img/students-10.webp 579w"  class="reviews" alt="review 10">
 
                         </div>
                     </div>
@@ -1075,7 +1058,7 @@
 
                 <div class="col-md-4 col-sm-6 col-xs-12 ">
                     <ul class="social-icons">
-                        <li><a class="instagram social-logo" target="_blank"
+                        <li><a class="instagram social-logo" aria-label="Instagram" target="_blank"
                                 href="https://www.instagram.com/learncorner20/"><svg xmlns="http://www.w3.org/2000/svg"
                                     height="16" width="14"
                                     viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
@@ -1083,7 +1066,7 @@
                                         d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
                                 </svg></a></li>
 
-                        <li><a class="tiktok social-logo" target="_blank"
+                        <li><a class="tiktok social-logo" aria-label="TikTok" target="_blank"
                                 href="https://www.tiktok.com/@learncorner20"><svg height="16" width="14"
                                     xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
@@ -1098,10 +1081,11 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <script src="/index.js" defer></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
     <script type="module">
+
         AOS.init();
 
         var swiper = new Swiper(".slide-content", {
@@ -1140,9 +1124,6 @@
             backSpeed: 30,
             loop: true
         });
-
-
-
 
     </script>
 </body>
