@@ -40,7 +40,7 @@ function sendEmail() {
              setTimeout(function() {
                 $(".prevent-user").remove();
                 $("#submit").text("إرسال");
-                $("#submit").css("background", "linear-gradient(299.5deg, #000000 35.53%, #9c01f5 109.8%)");
+                $("#submit").css("background", "#d89c12");
                 $("#submit").css("opacity", "1");
                 form.reset();
     
@@ -57,7 +57,7 @@ function sendEmail() {
              setTimeout(function() {
                 $(".prevent-user").remove();
                 $("#submit").text("إرسال");
-                $("#submit").css("background", "linear-gradient(299.5deg, #000000 35.53%, #9c01f5 109.8%)");
+                $("#submit").css("background", "#d89c12");
                 $("#submit").css("opacity", "1");
     
               }, 3000);

@@ -71,7 +71,7 @@
     }
 
     .row {
-        --bs-gutter-x: 0px
+        --bs-gutter-x: 0px !important
     }
 
     ::selection {
@@ -328,20 +328,28 @@
         width: max-content;
       }
 
+      p .text-secondary {
+        color: rgb(108 117 125 / 65%) !important;
+    }
+
       @media screen and (max-width: 992px) {
+        .nav-btn-mobile {
+            background: white !important;
+        }
         .mobile-new-word-offer {
             right: 0%;
             width: 85px;
             border-bottom-right-radius: 0px;
             top: 15%;
         }
-      }
+    }
     
     
       @media screen and (max-width: 578px) {
-        .container{
-          width: 100%;
-        }
+       
+        .common-q-container {
+            width: 100% !important;;
+          }
         .accordion-title{
           width: 80%;
         display: block;
@@ -361,6 +369,8 @@
         crossorigin="anonymous"></script>
         <link rel="stylesheet" href="/public/style/style.css" rel="preload" as="style"
         onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="stylesheet" href="/public/style/media.css" rel="preload" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
     <title>  الأسئلة الشائعة  </title>
 </head>
 <body>
@@ -372,14 +382,14 @@
     <nav class="navbar navbar-expand-md" dir="rtl">
         <div class="container-fluid">
             <div class="nav-logo display-mid-nav" dir="rtl">
-                <img class="navbar-logo navbar-logo-mid" src="/public/images/logo.webp" alt="Logo">
+                <img class="navbar-logo navbar-logo-mid" width="100%" src="/public/images/logo.webp"  alt="Learningcorner logo">
             </div>
             <a class="navbar-brand d-xl-block d-lg-block d-md-none d-none" href="/index.html">الرئيسية</a>
             <div class="collapse d-xl-block d-lg-block d-md-none" style="margin-left: auto;" id="navbarNav">
                 <ul class="navbar-nav" style="column-gap: 0.5rem">
                     <li class="nav-item">
                         <a class="nav-link nav-btn" aria-current="page"
-                            href="https://app.learningcorner.net">الدورات</a>
+                            href="https://app.learningcorner.net/courses">الدورات</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link nav-btn" aria-current="page" href="/public/pages/payment-method.html">وسائل
@@ -422,7 +432,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link nav-btn-mobile" aria-current="page"
-                        href="https://app.learningcorner.net">الدورات</a>
+                        href="https://app.learningcorner.net/courses">الدورات</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link nav-btn-mobile" aria-current="page"
@@ -445,6 +455,7 @@
             </ul>
         </div>
     </div>
+
 
 
 

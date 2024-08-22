@@ -548,6 +548,7 @@ box-shadow: none;
 .cards-offers{
   margin-left: auto;
   margin-right: auto;
+  position: relative;
   width: 300px;
   border-radius: 20px;
   height: 445px;
@@ -604,6 +605,12 @@ cursor: pointer;
     margin-top: 10px;
     margin-bottom: 40px;
 }
+.card-body .mt-3 {
+  position: absolute !important;
+  top: 78%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
 .money-image{
   margin-right: 10px;
     width: 65px;
@@ -637,7 +644,6 @@ cursor: pointer;
   margin-top: 15px;
 }
 .second-card-offer .card-text-offer{
-  width: 200px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -647,31 +653,37 @@ cursor: pointer;
   background: #8c20b4 !important;
 }
 .cards-offers .card-body{
-  position: relative;
   direction: rtl;
 }
-.installments-pay{
- top: 74%;
+.second-card-offer .card-text-offer{
+  width: 85%;
+}
+.second-card-offer .code-description{
+width: 80%;
+}
+.installments-pay, .installments-pay-first-card{
     position: absolute;
     font-size: 0.9rem;
-    left: 20%;
+   top: 90%;
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   transform: translate(-50%, -50%);
+   left: 50%;
+
 }
 .code-description{
   font-weight: bold;
   color: #8c20b4;
   margin-left: auto;
-    margin-right: auto;
-    width: 200px;
-}
+    margin-right: auto;}
 .counter-container{
   background-image: url(/public/images/texture-bg.webp);
   padding-bottom: 2.5rem;
 background-position: center;
 background-size: cover;
 }
-.third-card-offer .installments-pay{
-  top: 75%;
-}
+
 .discount-code-for-installments{
   color: #8c20b4;
   font-size: 0.85rem;
