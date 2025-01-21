@@ -101,9 +101,9 @@
     }
 
     .popup-container {
-        overflow-y: scroll;
-        height: 100%;
+        overflow: scroll;
         direction: ltr;
+        max-height: 100%;
     }
 
     .fourth-card-offer {
