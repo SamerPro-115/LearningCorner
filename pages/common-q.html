@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PF9H0GEMDD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PF9H0GEMDD');
+</script>
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon//favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon//favicon-16x16.png">
+    <link rel="manifest" href="/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description"
+    content="الأسئلة الشائعة الخاصة بمنصة ركن التعلم">
+<meta name="keywords"
+    content="جافا, Java, coding, programming, OOP, Python, كورس جافا ,تعلم جافا ,تعلم البرمجة ,لغة التجميع ,معمارية الحاسوب ,خوارزميات ,بيانات, Data, هياكل بيانات ,جافا سكريبت ,بايثون ,اكاديمية بشرى عسيري,">
+<meta property="og:title" content="Learn Corner">
+<meta property="og:description"
+    content="الأسئلة الشائعة الخاصة بمنصة ركن التعلم">
+<meta property="og:image" content="//images/logo.png">
+<meta property="og:url" content="https://learningcorner.net/pages/common-q">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Learn Corner">
+<meta name="twitter:description"
+    content="الأسئلة الشائعة الخاصة بمنصة ركن التعلم">
+<meta name="twitter:image" content="//images/logo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo&family=IBM+Plex+Sans+Arabic&display=swap"
+    rel="stylesheet">
+
+<style>
+    h2{
+        padding-right: 20px;
+    }
+    .topic-des{
+        padding-right: 20px;
+    }
+
+    * {
+        font-family: 'Cairo', sans-serif !important;
+
+    }
+
+    body {
+        background: #f9f9f9 !important;
+    }
+
+    html {
+        overflow-x: hidden;
+    }
+
+    a {
+        text-decoration: none !important;
+    }
+
+    .container {
+        --bs-gutter-x: 0px !important;
+    }
+
+    .row {
+        --bs-gutter-x: 0px !important
+    }
+
+    ::selection {
+        background: #f6ca06;
+        color: rgb(0, 0, 0);
+        height: 10px !important;
+        width: 10px !important;
+    }
+
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #939393;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #f9f9f9;
+    }
+
+    .container-fluid {
+        animation-duration: 0.5s;
+    }
+
+    .navbar {
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
+        width: 100%;
+        height: 100px;
+        background: #f9f9f9;
+        border-bottom: 1px solid rgba(222, 217, 217, 0.67);
+    }
+
+    .container-fluid {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .nav-link {
+        font-size: 1.10rem;
+        background: #edededc2 !important;
+    }
+
+    .navbar-brand {
+        transition: 0.3s ease-in-out !important;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        background: #edededc2;
+        border-radius: 100px;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        font-size: 1rem;
+        color: black !important;
+    }
+
+    .navbar-brand:hover {
+        background: #ffbf01;
+        opacity: 0.8;
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+
+    .navbar-nav {
+        padding-right: 10px;
+    }
+
+    .navbar-logo {
+        width: 80px;
+        margin-right: 23px;
+    }
+
+    .nav-btn {
+        transition: 0.3s ease-in-out !important;
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+        background: #edededc2;
+        border-radius: 100px;
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+        font-size: 1rem;
+        color: black !important;
+        line-height: 1.8;
+    }
+
+    .nav-btn:hover {
+        background: #ffbf01 !important;
+        opacity: 0.8;
+        font-size: 0.8rem !important;
+        font-weight: bold;
+    }
+
+    .login {
+        margin-left: 20px;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        padding-top: 0.375rem;
+        padding-bottom: 0.375rem;
+        color: white;
+        background: #940d9a;
+        border-radius: 0.5rem
+    }
+
+    .login:hover {
+        background: #7f0d84;
+    }
+
+    .nav-btn-mobile {
+        padding: 1.3rem !important;
+    }
+
+    .btn-close {
+        padding: 11px !important;
+        border-radius: 20px;
+        background-color: #940d9a;
+        opacity: 1;
+        background-size: 13px;
+        box-shadow: none !important;
+        --bs-btn-close-bg: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="%23ffffff"%3e%3cpath d="M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z"/%3e%3c/svg%3e');
+        /* White color */
+
+    }
+
+    .new-word-offer {
+        right: 15%;
+        left: 27%;
+        position: absolute;
+        top: 0%;
+        font-size: 0.5rem;
+        color: white;
+        text-align: center;
+        width: 65%;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        background-color: #ffbc04;
+        transition: background-color 0.5s ease;
+        /* Add transition property */
+
+    }
+
+    .common-q-container {
+        margin: 0 auto;
+        width: 48rem !important;
+      }
+      .accordion{
+        box-shadow: -4px 0px 24px -12px rgba(27,27,27,0.39) inset;
+    -webkit-box-shadow: -4px 0px 24px -12px rgba(27,27,27,0.39) inset;
+    -moz-box-shadow: -4px 0px 24px -12px rgba(27,27,27,0.39) inset;
+      }
+      .accordion-item {
+        border-bottom: 1px solid #ccc;
+        background: #ffda721f !important;
+      }
+      
+      .accordion-item button[aria-expanded='true'] {
+        border-bottom: 1px solid #7f0d84;
+      }
+      
+      .accordion button {
+        position: relative;
+        display: block;
+        text-align: right;
+        width: 100%;
+        padding: 1em 0;
+        color: #000;
+        font-size: 1.15rem;
+        font-weight: 400;
+        border: none;
+        background: none;
+        outline: none;
+      }
+      
+      .accordion button:hover,
+      .accordion button:focus {
+        cursor: pointer;
+        color: #7f0d84;
+      }
+      
+      .accordion button:hover::after,
+      .accordion button:focus::after {
+        cursor: pointer;
+        color: #7f0d84;
+        border: 1px solid #7f0d84;
+      }
+      
+      .accordion button .accordion-title {
+        padding: 1em 1.5em 1em 0;
+        font-weight: bold;
+      }
+      
+      .accordion button .icon {
+        display: inline-block;
+        position: absolute;
+        top: 18px;
+        left: 20px;
+        width: 22px;
+        height: 22px;
+        border: 2px solid;
+        border-radius: 22px;
+      }
+      
+      .accordion button .icon::before {
+        display: block;
+        position: absolute;
+        content: '';
+        top: 9px;
+        left: 5px;
+        width: 10px;
+        height: 2px;
+        background: currentColor;
+      }
+      
+      .accordion button .icon::after {
+        display: block;
+        position: absolute;
+        content: '';
+        top: 5px;
+        left: 9px;
+        width: 2px;
+        height: 10px;
+        background: currentColor;
+      }
+      
+      .accordion button[aria-expanded='true'] {
+        color: #7f0d84;
+      }
+      
+      .accordion button[aria-expanded='true'] .icon::after {
+        width: 0;
+      }
+      
+      .accordion button[aria-expanded='true'] + .accordion-content {
+        opacity: 1;
+        max-height: 9em;
+        transition: all 200ms linear;
+        will-change: opacity, max-height;
+      }
+      
+      .accordion-content {
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: opacity 200ms linear, max-height 200ms linear;
+        will-change: opacity, max-height;
+        text-align: right;
+      }
+      
+      .accordion-content p {
+        font-size: 1rem;
+        font-weight: 300;
+        margin: 2em 0;
+      }
+      .popup-container>.offers-row> div:nth-child(1){
+        width: max-content;
+      }
+
+      p .text-secondary {
+        color: rgb(108 117 125 / 65%) !important;
+    }
+
+      @media screen and (max-width: 992px) {
+        .nav-btn-mobile {
+            background: white !important;
+        }
+        .mobile-new-word-offer {
+            right: 0%;
+            width: 85px;
+            border-bottom-right-radius: 0px;
+            top: 15%;
+        }
+    }
+    
+    
+      @media screen and (max-width: 578px) {
+       
+        .common-q-container {
+            width: 100% !important;;
+          }
+        .accordion-title{
+          width: 80%;
+        display: block;
+        padding-right: 10px;
+        }
+      }
+
+      @media screen and (min-width: 712px) and (max-width: 1024px) and (orientation: portrait),
+      screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+    footer{
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+       }
+  }
+  
+      
+</style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" defer
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" defer
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/style/style.css" rel="preload" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="stylesheet" href="/style/media.css" rel="preload" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <title>  الأسئلة الشائعة  </title>
+</head>
+<body>
+
+
+   
+
+   
+    <nav class="navbar navbar-expand-md" dir="rtl">
+        <div class="container-fluid">
+            <div class="nav-logo display-mid-nav" dir="rtl">
+                <img class="navbar-logo navbar-logo-mid" width="100%" src="/images/logo.webp"  alt="Learningcorner logo">
+            </div>
+            <a class="navbar-brand d-xl-block d-lg-block d-md-none d-none" href="/index.html">الرئيسية</a>
+            <div class="collapse d-xl-block d-lg-block d-md-none" style="margin-left: auto;" id="navbarNav">
+                <ul class="navbar-nav" style="column-gap: 0.5rem">
+                    <li class="nav-item">
+                        <a class="nav-link nav-btn" aria-current="page"
+                            href="https://learningcorner.msaaq.net/courses">الدورات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-btn" aria-current="page" href="/pages/payment-method.html">وسائل
+                            الدفع</a>
+                    </li>
+                    <li class="nav-item" style="position: relative;">
+                        <a class="nav-link nav-btn offers-btn" onclick="openOverlay()" aria-current="page"
+                            href="#">العروض</a>
+                        <span id="changingColorElement" class="new-word-offer">جديد !</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-btn" aria-current="page" href="/pages/installments.html"> تعليمات
+                            التقسيط</a>
+                    </li>
+                </ul>
+            </div>
+            <a class="login d-xl-block d-lg-block d-md-block d-none" aria-current="page" style="margin-right: auto;"
+                href="https://learningcorner.msaaq.net/login">تسجيل/دخول</a>
+            </ul>
+            <button class="navbar-toggler d-xl-none d-lg-none d-md-block border-0" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Offcanvas Container -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav" dir="rtl" style="column-gap: 0.5rem">
+                <li class="nav-item">
+                    <a class="nav-link nav-btn-mobile" aria-current="page"
+                        href="https://learningcorner.net">الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-btn-mobile" aria-current="page"
+                        href="https://learningcorner.msaaq.net/courses">الدورات</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-btn-mobile" aria-current="page"
+                        href="/pages/payment-method.html">وسائل الدفع</a>
+                </li>
+                <li class="nav-item" style="position: relative;">
+                    <a class="nav-link nav-btn-mobile offers-btn" onclick="openOverlay()" aria-current="page"
+                        href="#">العروض</a>
+                    <span id="changingColorElementMobile" class="new-word-offer mobile-new-word-offer">جديد !</span>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-btn-mobile" aria-current="page" href="/pages/installments.html">
+                        تعليمات التقسيط</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-btn-mobile d-lg-none d-md-none d-block" aria-current="page"
+                        href="https://learningcorner.msaaq.net/login"> تسجيل الدخول </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+    
+    <div class="container common-q-container" dir="rtl">
+        <h2 class="fw-bold mt-5">من نحن ؟</h2>
+            <p class="mb-5 topic-des">
+                منصة تعليمية تهتم بتقديم كورسات ومحاضرات مسجلة لشرح المناهج الجامعية لتخصص الحاسب الآلي بطريقة سهلة ويمكن للطالب
+                مشاهدتها في أي وقت ومتاحة دائماً تقدمها المهندسة بشرى المانع وهي ذو خبرة و كفاءة عالية لكي تلبي إحتياجات الطلبة
+                والطالبات وتساعدهم على فهم المواد الدراسية بسلاسة وسهولة.
+            </p>
+        <h2 class="text-center">الأسئلة الشائعة</h2>
+        <div class="accordion">
+          <div class="accordion-item">
+            <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">هل يمكنني التحويل من بنك غير بنك الراجحي ؟ </span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>نعم يمكنك عن طريق الايبان </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">كيف أقوم بالاشتراك في أحد المناهج التعليمية ؟</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>تقوم بالبحث عن الكورس اللي محتاج تشترك فيه وبعد ذلك تضغظ علي كلمة اشتراك و تقوم بالسداد علي الحساب البنكي الخاص بالمنصة وتنتظر تفعيل ادارة المنصة ( قد يأخذ التفعيل 24 ساعه ) </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">هل توفر المنصة نظام التقسيط ؟</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>نعم</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">ماهي مدة الإشتراك في الكورس؟</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>مدة الاشتراك تكون فقط فصل دراسي واحد . </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">لدي أسألة إضافية كيف أتواصل معك ؟ </span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>
+                تواصل معي عبر الايميل الرسمي للمنصة <a href="mailto:bushralearncorner@gmail.com ">bushralearncorner@gmail.com </a> 
+                او رقم الجوال    
+                <a href="https://wa.me/966583994478">0583994478</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+   
+      <div class="overlay-popup " id="overlay" dir="rtl">
+        <div class="container popup-container">
+            <div class="row offers-row" style="direction: rtl !important;">
+                <div dir="rtl">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi close-offers-popup"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                    </svg>
+                </div>
+                <h1 class="text-center fw-bold" dir="rtl" style="color: #8c20b4;">العروض <span><img
+                            src="/images/money.webp" loading="lazy" class="money-image" alt="money">
+                    </span></h1>
+
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 text-center">
+                    <div class="card cards-offers second-card-offer"
+                        onclick="redirectToProductPage('https://learningcorner.msaaq.net')">
+                        <h3 class="card-title-offer">عرض الإشتراك</h3>
+                        <h5 dir="rtl"><span class="old-price">349</span> <span class="new-price fw-bold">314 SAR</span>
+                        </h5>
+                        <img src="/images/limited-time.webp" class="image-offers" loading="lazy"
+                            alt="Placeholder Image">
+                        <div class="card-body">
+                            <p class="card-text-offer">
+                                <span>أختر أي مقرر وأستفد من عرض <br> <span class="text-danger fw-bold">خصم 10%</span></span>
+                                <br>
+                            </p>
+                            <p class="code-description"> استخدم كود <span class="text-danger">LC1</span> للإشتراك الكامل
+                                <br>
+                            </p>
+                            <p class="fw-bold text-danger mt-3">أو </p>
+                            <p class="installments-pay-first-card installments-with-code ">
+                                <a href="/pages/installments.html" class="btn contact-me-offer">قسطها !</a><br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 text-center">
+                    <div class="card  cards-offers third-card-offer"
+                        onclick="redirectToProductPage('https://learningcorner.net/pages/installments.html')">
+                        <h3 class="card-title-offer">عرض الإشتراك بمقررين</h3>
+                        <h5 dir="rtl"><span class="old-price">698</span> <span class="new-price fw-bold">614 SAR</span>
+                        </h5>
+                        <img src="/images/2-books.webp" class="image-offers" loading="lazy"
+                            alt="Placeholder Image">
+                        <div class="card-body">
+                            <p class="card-text-offer">
+                                <span>أختر أي مقررين و استفد من <br> <span class="text-danger fw-bold">خصم 12%</span></span>
+                            </p>
+                            <p class="code-description code-description-mobile">استخدم كود <span
+                                    class="text-danger">LC3</span> للإشتراك الكامل في المقررات</p> <br>
+                            <p class="installments-pay">
+
+                                تحب تقسطها ؟ <a href="/pages/contact.html" class="btn contact-me-offer">تواصل
+                                    معي</a></p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 text-center">
+                    <div class="card  cards-offers fourth-card-offer"
+                        onclick="redirectToProductPage('https://learningcorner.net/pages/installments.html')">
+                        <h3 class="card-title-offer">عرض الإشتراك بثلاث مقررات</h3>
+                        <h5 dir="rtl"><span class="old-price">1047</span> <span class="new-price fw-bold">875 SAR</span>
+                        </h5>
+                        <img src="/images/3-books.webp" class="image-offers" loading="lazy"
+                            alt="Placeholder Image">
+                        <div class="card-body">
+                            <p class="card-text-offer">
+                                <span>أختر أي ثلاث مقررات وأحصل على  <br> خصمك الخاص</span>
+                            </p>
+                            <p class="mb-2 code-description code-description-mobile">استخدم كود <span
+                                    class="text-danger">LC4</span> للإشتراك الكامل في المقررات</p> <br>
+
+                            <p class="installments-pay installments-pay-fourth-card">تحب تقسطها ؟ <a
+                                    href="/pages/contact.html" class="btn contact-me-offer">تواصل معي</a></p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <p class="fw-bold offer-note">ملاحظة: لا يمكنك الحصول على خصمين في نفس الوقت. يرجى اختيار الخصم الذي
+                    يناسبكم أكثر.</p>
+
+            </div>
+        </div>
+    </div>
+
+
+ 
+
+  <!-- Site footer -->
+  <footer class="site-footer" data-aos="fade-up" style="margin-top: 7rem;">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-xs-6 col-md-6">
+                <h6 >المجالات</h6>
+                <ul class="footer-links first-section" >
+                    <li>
+                        <p class="footer-text" href="http://scanfcode.com/category/c-language/">البرمجة بلغة جافا
+                        </p>
+                    </li>
+                    <li>
+                        <p class="footer-text" href="http://scanfcode.com/category/front-end-development/">المعالجات
+                            السريعة ولغة التجميع</p>
+                    </li>
+                    <li>
+                        <p class="footer-text" href="http://scanfcode.com/category/back-end-development/">خوارزميات
+                            وهياكل البيانات</p>
+                    </li>
+                    <li>
+                        <p class="footer-text" href="http://scanfcode.com/category/java-programming-language/">
+                            معمارية الحاسوب</p>
+                    </li>
+                    <li>
+                        <p class="footer-text" href="http://scanfcode.com/category/java-programming-language/">الآمن
+                            السيبراني (قريباً)</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-xs-6 col-md-6">
+                <h6>روابط مختصرة</h6>
+                <ul class="footer-links second-section">
+                    <li><a href="https://learningcorner.msaaq.net">الدورات</a></li>
+                    <li><a href="/pages/contact.html">تواصل</a></li>
+                    <li><a href="/pages/terms-and-conditions.html"> الشروط والأحكام</a></li>
+                    <li><a href="/pages/common-q.html">الأسئلة الشائعة</a></li>
+                    <li><a href="/pages/payment-method.html">وسائل الدفع</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+                <p class="copyright-text" dir="rtl"> جميع الحقوق محفوظة © 2024، Learning Corner with Bushra
+                </p>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-12 ">
+                <ul class="social-icons">
+                    <li><a aria-label="Instagram" class="instagram social-logo" target="_blank"
+                            href="https://www.instagram.com/learncorner20/"><svg xmlns="http://www.w3.org/2000/svg"
+                                height="16" width="14"
+                                viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                                <path
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                            </svg></a></li>
+
+                            <li><a aria-label="TikTok" class="tiktok social-logo" target="_blank"
+                                href="https://www.tiktok.com/@learncorner20"><svg height="16" width="14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"/></svg></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="/index.js" defer></script>
+    <script>
+        const items = document.querySelectorAll(".accordion button");
+
+function toggleAccordion() {
+  const itemToggle = this.getAttribute('aria-expanded');
+  
+  for (i = 0; i < items.length; i++) {
+    items[i].setAttribute('aria-expanded', 'false');
+  }
+  
+  if (itemToggle == 'false') {
+    this.setAttribute('aria-expanded', 'true');
+  }
+}
+
+items.forEach(item => item.addEventListener('click', toggleAccordion));
+    </script>
+</body>
+</html>

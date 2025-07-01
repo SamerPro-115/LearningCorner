@@ -1,0 +1,589 @@
+@media screen and (max-width:1400px) {
+    .image-logo {
+        right: 44.5%;
+        top: 35%
+    }
+
+    .image-text-header {
+        right: 36.5%;
+        font-size: 1.4rem;
+        top: 47%
+    }
+
+    .image-text-description-2 {
+        text-align: center;
+        text-wrap: wrap
+    }
+
+    .text-container {
+        margin-left: 0
+    }
+
+    .header-description {
+        font-size: 1.5rem
+    }
+
+    .first-collection-first-card .card-body a,
+    .first-collection-last-card .card-body a,
+    .second-collection-before-last-card .card-body a {
+        margin-top: 0
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .nav-logo {
+        text-align: left !important
+    }
+
+    .image-text-header {
+        right: 33.5%
+    }
+
+    .header-description {
+        right: 44.5%;
+        font-size: 1.4rem
+    }
+
+    .image-col3-text-header-2 {
+        width: 100%;
+        margin-right: -37px;
+        margin-top: 10rem
+    }
+
+    .image-text-description-2 {
+        width: 100%;
+        margin-right: -33px
+    }
+
+    #third-col-card {
+        margin-top: 80px
+    }
+
+    .fourth-card-container {
+        width: 14%
+    }
+
+    .first-card {
+        height: 145px
+    }
+
+    .third-card {
+        height: 165px
+    }
+
+    .fourth-card {
+        width: 100%;
+        margin-top: 80px !important
+    }
+
+    .image {
+        height: 500px
+    }
+
+    .image-col2-text-header {
+        margin-top: 10rem
+    }
+
+    .java-logo {
+        right: 42.5%;
+        top: 31%;
+        width: 15%
+    }
+
+    .first-collection-first-card .card-body a,
+    .first-collection-last-card .card-body a {
+        margin-top: 20px
+    }
+
+    .about-me-image {
+        width: 400px;
+        margin-top: 100px
+    }
+
+    .popup-container {
+        overflow: scroll;
+        direction: ltr;
+        max-height: 100%;
+    }
+
+    .fourth-card-offer {
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    .cards-offers {
+        width: 90%
+    }
+
+    .fifth-collection-first-card,
+    .third-collection-first-card {
+        margin-top: 24px
+    }
+
+    .pay-description-first-card-from-collection {
+        margin-top: 23px
+    }
+}
+
+@media screen and (min-height:1200px) {
+    .popup-container {
+        height: auto;
+        overflow-y: auto;
+        border-radius: 20px;
+        margin-top: 3rem
+    }
+}
+
+@media screen and (max-width:992px) {
+
+    #third-col-card,
+    .first-collection-last-card .card-body a,
+    .image-col2-text-header,
+    .image-col3-text-header-2 {
+        margin-top: 0
+    }
+
+    .card-title,
+    nav div .navbar-collapse .navbar-nav .nav-item .nav-link {
+        font-size: 1rem
+    }
+
+    .navbar-nav {
+        padding-right: 0
+    }
+
+    .offcanvas-body {
+        padding: 0
+    }
+
+    .nav-btn-mobile:hover {
+        background: #ffbf01
+    }
+
+    .offcanvas-header {
+        margin-bottom: 15px
+    }
+
+    .navbar-collapse {
+        display: none !important
+    }
+
+    .header {
+        font-size: 2rem
+    }
+
+    .image-text-header {
+        right: 28.6%;
+        margin-left: auto;
+        font-size: 1.3rem;
+        margin-right: auto;
+        width: 50%
+    }
+
+    .image-col3-text-header-2,
+    .image-text-description-2 {
+        margin-right: 0;
+        margin-left: 0
+    }
+
+    .image-logo {
+        right: 43.5%;
+        width: 11%;
+        top: 28%
+    }
+
+    .data-icon {
+        width: 9%;
+        right: 45.5%
+    }
+
+    .card .code-description-mobile,
+    .fourth-card-offer,
+    .image,
+    .third-card-section-four {
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    .image {
+        display: block;
+        height: 450px
+    }
+
+    .box {
+        margin-top: 80px;
+        width: 90% !important
+    }
+
+    .first-card-container {
+        top: -33%;
+        left: 45%;
+        width: 10%
+    }
+
+    .cards,
+    .first-card,
+    .third-card {
+        height: auto
+    }
+
+    .second-card-container {
+        padding: 11px;
+        width: 9.5%;
+        top: -33%;
+        left: 45%
+    }
+
+    .third-card-container {
+        width: 10%;
+        top: -28%;
+        left: 44.7%
+    }
+
+    .fourth-card-container {
+        width: 10%;
+        top: -28%;
+        left: 44.5%
+    }
+
+    .third-card-section-four {
+        width: 50%;
+        margin-top: 30px
+    }
+
+    .image-text-header-col-3 {
+        right: 26.6%
+    }
+
+    .learn-word-mid-nave {
+        top: 16px
+    }
+
+    .second-section-header {
+        margin-bottom: 1rem
+    }
+
+    .about-me-image {
+        width: 300px;
+        margin-bottom: 50px;
+        margin-top: 23px
+    }
+
+    .offer-note {
+        margin-bottom: 30px;
+        margin-top: 20px
+    }
+
+    .home-page-card .card-img-top {
+        height: 100%
+    }
+
+    .home-page-card {
+        width: 100%;
+        margin-top: 20px
+    }
+
+    .mobile-new-word-offer {
+        right: 0;
+        width: 85px;
+        border-bottom-right-radius: 0;
+        top: 15%
+    }
+
+    .card .card-body {
+        text-wrap: balance
+    }
+
+    .card .code-description-mobile {
+        width: 200px
+    }
+
+    .large-cards {
+        margin-top: 3rem
+    }
+
+    .purple-watercolor {
+        top: 81%;
+        left: 53%;
+        transform: rotate(0)
+    }
+
+    .orange-watercolor {
+        top: 69%;
+        transform: rotate(27deg);
+        left: -12%
+    }
+
+    .fourth-card-offer {
+        margin-top: 30px;
+        width: 58%
+    }
+}
+
+@media screen and (max-width:767px) {
+    .nav-logo {
+        text-align: right !important
+    }
+
+    .text-container {
+        margin-left: 0;
+        position: unset
+    }
+
+    .header {
+        text-align: center !important;
+        position: unset
+    }
+
+    .header-description {
+        position: unset;
+        width: 100%;
+        text-align: center
+    }
+
+    .fourth-card-container {
+        width: 11%;
+        top: -24%;
+        left: 45%
+    }
+
+    .first-card-container {
+        width: 12%;
+        top: -25% !important
+    }
+
+    .card {
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    .icons-text-description {
+        font-size: 1.5rem
+    }
+
+    .third-icon-container {
+        margin-top: 25px
+    }
+
+    .counter {
+        font-size: 1.7rem
+    }
+
+    .about-me-description {
+        width: 100%
+    }
+
+    .site-footer {
+        padding-bottom: 0
+    }
+
+    .site-footer .copyright-text,
+    .site-footer .social-icons {
+        text-align: center
+    }
+
+    .site-footer [class^=col-] {
+        margin-bottom: 30px
+    }
+
+    .fourth-card-container svg,
+    .third-card-container svg {
+        width: 85% !important
+    }
+
+    .second-card-container svg {
+        width: 70% !important
+    }
+
+    #second-section,
+    .first-hr {
+        margin-top: 3rem
+    }
+
+    .second-section-header {
+        margin-bottom: 0
+    }
+
+    .fourth-card-offer,
+    .second-card-offer,
+    .third-card-offer {
+        margin-top: 30px
+    }
+
+    #students-opinion {
+        padding: 0
+    }
+
+    .purple-watercolor {
+        left: 23%
+    }
+
+    .orange-watercolor {
+        top: 68%;
+        transform: rotate(-336deg);
+        left: -19%
+    }
+
+    .offers-row .card {
+        width: 75%
+    }
+}
+
+@media screen and (max-width:568px) {
+
+    .box div,
+    .image-logo {
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    .popup-container {
+        direction: unset
+    }
+
+    .header-description {
+        font-size: 1.2rem;
+        padding: 10px
+    }
+
+    .image {
+        height: 330px;
+        width: 90vw
+    }
+
+    .image-logo {
+        right: -1.5%;
+        top: 28%;
+        width: 60px
+    }
+
+    .image-text-header {
+        text-align: center;
+        right: -1%;
+        font-size: 1rem
+    }
+
+    .image-text-header-col-2 {
+        top: 47%;
+        right: 0
+    }
+
+    .data-icon {
+        width: 53px
+    }
+
+    .image-text-description {
+        font-size: 1rem;
+        margin-right: 0
+    }
+
+    .image-col2-text-header {
+        font-size: 1.3rem;
+        margin-right: 0
+    }
+
+    .image-text-description-2 {
+        font-size: 1rem;
+        text-wrap: balance
+    }
+
+    .image-col3-text-header-2 {
+        font-size: 1.3rem
+    }
+
+    .images-section-mobile .first-column {
+        margin-top: 0 !important
+    }
+
+    .rest-of-columns {
+        margin-top: 3rem !important
+    }
+
+    .box div {
+        top: -38px;
+        left: 45%;
+        width: 55px;
+        text-align: center;
+        display: block
+    }
+
+    .first-card-container {
+        top: -38px !important
+    }
+
+    .third-card-container {
+        top: -45px !important
+    }
+
+    .icon-container {
+        width: 65px
+    }
+
+    .second-icon-container {
+        margin-top: 25px
+    }
+
+    .about-me-image {
+        width: 65%
+    }
+
+    .student-opinion {
+        width: 100%;
+        margin-bottom: 30px
+    }
+
+    .carousel {
+        width: 100%
+    }
+
+    .carousel-indicators {
+        width: 75%
+    }
+
+    .bi-stars {
+        width: 35px;
+        height: 35px;
+        color: #ffd02d;
+        margin-right: 5px
+    }
+
+    .orange-watercolor,
+    .purple-watercolor {
+        display: none
+    }
+
+    .offers-row .card {
+        width: 80%
+    }
+}
+
+@media screen and (max-width:468px) {
+    #first-col-card {
+        margin-top: 7px
+    }
+
+    #fourth-col-card,
+    #second-col-card,
+    #third-col-card {
+        margin-top: 50px
+    }
+
+    .box div {
+        left: 0;
+        right: 0
+    }
+}
+
+@media screen and (max-width:399px) {
+    .card .code-description-mobile {
+        width: unset
+    }
+
+    .card-text-offer {
+        margin-top: 0
+    }
+
+    .offers-row .card {
+        width: 85%
+    }
+}

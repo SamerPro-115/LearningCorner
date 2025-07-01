@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="-IB3_EgcLEIpaOd9rskew8A3FcWZju0B2ayrPclWizo" />
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PF9H0GEMDD"></script>
+<script>
+  window.dataLayer = window.dataLayer || []; 
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date()); 
+ 
+  gtag('config', 'G-PF9H0GEMDD');
+</script>
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description"
+        content="ركن التعلم... رفيقك في النجاح .. ومساعدك في التفوق الأكاديمي ... لمواد الحاسب الآلي ... حياك معنا وفالك الA+ يابطل 😍"
+        dir="rtl"> 
+    <meta name="keywords" 
+        content="جافا, Java, coding, programming, OOP, Python, كورس جافا ,تعلم جافا ,تعلم البرمجة ,لغة التجميع ,معمارية الحاسوب ,خوارزميات ,بيانات, Data, هياكل بيانات ,جافا سكريبت ,بايثون ,اكاديمية بشرى عسيري,">
+    <meta property="og:title" content="Learn Corner">
+    <meta property="og:description"
+        content="ركن التعلم... رفيقك في النجاح .. ومساعدك في التفوق الأكاديمي ... لمواد الحاسب الآلي ... حياك معنا وفالك الA+ يابطل 😍"
+        dir="rtl">
+    <meta property="og:image" content="https://learningcorner.netimages/webp.png">
+    <meta property="og:url" content="https://learningcorner.net">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Learn Corner">
+    <meta name="twitter:description"
+        content="ركن التعلم... رفيقك في النجاح .. ومساعدك في التفوق الأكاديمي ... لمواد الحاسب الآلي ... حياك معنا وفالك الA+ يابطل 😍"
+        dir="rtl">
+    <meta name="twitter:image" content="https://learningcorner.netimages/webp.png">
+    <!-- Critcal CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&family=IBM+Plex+Sans+Arabic&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Cairo', sans-serif !important;
+        }
+        .header-container {
+            position: relative;
+            background-image: url(images/image-header.webp);
+            height: 100vh;
+            background-position: center;
+            background-size: cover;
+          }
+
+        body {
+            background: #f9f9f9 !important;
+        }
+
+        html {
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none !important;
+        }
+
+        .container {
+            --bs-gutter-x: 0px !important;
+        }
+
+        .row {
+            --bs-gutter-x: 0px !important;
+        }
+
+        ::selection {
+            background: #f6ca06;
+            color: rgb(0, 0, 0);
+            height: 10px !important;
+            width: 10px !important;
+        }
+
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #939393;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f9f9f9;
+        }
+
+        .container-fluid {
+            animation-duration: 0.5s;
+        }
+
+        .navbar {
+            padding-top: 1.5rem !important;
+            padding-bottom: 1.5rem !important;
+            width: 100%;
+            height: 100px;
+            background: #f9f9f9;
+            border-bottom: 1px solid rgba(222, 217, 217, 0.67);
+        }
+
+        .container-fluid {
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+
+        .nav-link {
+            font-size: 1.10rem;
+            background: #edededc2 !important;
+        }
+
+        .navbar-brand {
+            transition: 0.3s ease-in-out !important;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            background: #edededc2;
+            border-radius: 100px;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            font-size: 1rem;
+            color: black !important;
+        }
+
+        .navbar-brand:hover {
+            background: #ffbf01;
+            opacity: 0.8;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .navbar-nav {
+            padding-right: 10px;
+        }
+
+        .navbar-logo {
+            width: 80px;
+            margin-right: 23px;
+        }
+
+        .nav-btn {
+            transition: 0.3s ease-in-out !important;
+            padding-left: 1.5rem !important;
+            padding-right: 1.5rem !important;
+            background: #edededc2;
+            border-radius: 100px;
+            padding-top: 0.5rem !important;
+            padding-bottom: 0.5rem !important;
+            font-size: 1rem;
+            color: black !important;
+            line-height: 1.8;
+        }
+
+        .nav-btn:hover {
+            background: #ffbf01 !important;
+            opacity: 0.8;
+            font-size: 0.8rem !important;
+            font-weight: bold;
+        }
+
+        .login {
+            margin-left: 20px;
+            padding-left: 0.75rem;
+            padding-right: 0.75rem;
+            padding-top: 0.375rem;
+            padding-bottom: 0.375rem;
+            color: white;
+            background: #940d9a;
+            border-radius: 0.5rem
+        }
+
+        .login:hover {
+            background: #7f0d84;
+        }
+
+        .nav-btn-mobile {
+            padding: 1.3rem !important;
+        }
+
+        .btn-close {
+            padding: 11px !important;
+            border-radius: 20px;
+            background-color: #940d9a;
+            opacity: 1;
+            background-size: 13px;
+            box-shadow: none !important;
+            --bs-btn-close-bg: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="%23ffffff"%3e%3cpath d="M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z"/%3e%3c/svg%3e');
+            /* White color */
+
+        }
+
+        .new-word-offer {
+            right: 15%;
+            left: 27%;
+            position: absolute;
+            top: 0%;
+            font-size: 0.5rem;
+            color: white;
+            text-align: center;
+            width: 65%;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            background-color: #ffbc04;
+            transition: background-color 0.5s ease;
+            /* Add transition property */
+
+        }
+
+        .text-container {
+            width: 100%;
+        }
+
+        .header {
+            width: 100%;
+            font-size: 3rem;
+            word-spacing: 0.2rem;
+        }
+
+        .header-description {
+          
+            font-size: 2rem;
+        }
+
+        .auto-type {
+            color: #ffbb21;
+        }
+
+        .card-img-top {
+            border-radius: 1.8rem;
+            padding: 15px;
+            height: 250px;
+        }
+
+        .cards {
+            transition: ease-in-out 0.3s;
+            width: 450px;
+            border-color: #ebebeb !important;
+            border-radius: 1rem;
+            margin: auto;
+        }
+
+        .home-page-card {
+            width: 90%;
+            height: auto;
+        }
+
+        p .text-secondary {
+            color: rgb(108 117 125 / 65%) !important;
+        }
+
+        .mobile-header {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .button {
+            margin-top: 30px;
+            cursor: pointer;
+            position: relative;
+            padding: 10px 24px;
+            font-size: 18px;
+            color: #ffbb21;
+            border: 2px solid #ffbb21;
+            border-radius: 5px;
+            background-color: transparent !important;
+            font-weight: 600;
+            transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+            overflow: hidden;
+          }
+      
+          .button::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            margin: auto;
+            width: 50px;
+            height: 50px;
+            border-radius: inherit;
+            scale: 0;
+            z-index: -1;
+            background-color: #940d9a;
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+          }
+      
+          .button:hover::before {
+            scale: 4.2;
+          }
+      
+          .button:hover {
+            color: #ffffff;
+            scale: 1.1;
+            box-shadow: 0 0px 20px #ffbb21;
+            border: 2px solid #940d9a ;
+
+          }
+      
+          .button:active {
+            scale: 1;
+          }
+         
+          
+          .header-container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: inherit;
+            background-size: inherit;
+            background-position: inherit;
+            filter: brightness(50%);
+            z-index: 1;
+          }
+          
+          #first-section {
+            position: absolute;
+            z-index: 2;
+            color: white;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 75%;
+            text-wrap: balance;
+          }
+
+       
+        @media screen and (max-width: 1200px) {
+            #first-section{
+                width: 80%;
+                text-wrap: unset;
+              }
+        }
+
+        @media screen and (max-width: 992px) {
+            .nav-btn-mobile {
+                background: white !important;
+            }
+
+            .header-description {
+                font-size: 1.4rem;
+                top: 250px;
+            }
+
+            .card {
+                width: 95%;
+                margin-top: 30px;
+            }
+            #first-section{
+                width: 95%;
+            }
+            .header-container {
+                background-image: url(mobile-img/image-header.webp);
+              }
+              .header-container::before{
+                filter: brightness(40%);
+
+              }
+        }
+
+        @media screen and (max-width: 578px) {
+            .header {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous"  referrerpolicy="no-referrer" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous" defer></script>
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"
+        integrity="sha512-tQQXRDB2wEmuJGtFrmmoFYzNTq8StA1XJrfO0OQbbTxd9G0CwaTDL6/C1y805IlvBVrMwOqob1kf6r/2U5XXVg=="
+        crossorigin="anonymous"  referrerpolicy="no-referrer"></script>
+
+ 
+
+ 
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="style/style.css" rel="preload" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="style/media.css" rel="preload" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+
+    <title>ركن التعلّم</title>
+</head>
+
+<body>
+
+
+
+
+    <nav class="navbar navbar-expand-md" dir="rtl">
+        <div class="container-fluid">
+            <div class="nav-logo display-mid-nav" dir="rtl">
+                <img class="navbar-logo navbar-logo-mid" width="100%" src="images/logo.webp"  alt="Learningcorner logo">
+            </div>
+            <a class="navbar-brand d-xl-block d-lg-block d-md-none d-none" href="/index.html">الرئيسية</a>
+            <div class="collapse d-xl-block d-lg-block d-md-none" style="margin-left: auto;" id="navbarNav">
+                <ul class="navbar-nav" style="column-gap: 0.5rem">
+                    <li class="nav-item">
+                        <a class="nav-link nav-btn" aria-current="page"
+                            href="https://learningcorner.msaaq.net/courses">الدورات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-btn" aria-current="page" href="/pages/payment-method.html">وسائل
+                            الدفع</a>
+                    </li>
+                    <li class="nav-item" style="position: relative;">
+                        <a class="nav-link nav-btn offers-btn" onclick="openOverlay()" aria-current="page"
+                            href="#">العروض</a>
+                        <span id="changingColorElement" class="new-word-offer">جديد !</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-btn" aria-current="page" href="pages/installments.html"> تعليمات
+                            التقسيط</a>
+                    </li>
+                </ul>
+            </div>
+            <a class="login d-xl-block d-lg-block d-md-block d-none" aria-current="page" style="margin-right: auto;"
+                href="https://learningcorner.msaaq.net/login">تسجيل/دخول</a>
+            </ul>
+            <button class="navbar-toggler d-xl-none d-lg-none d-md-block border-0" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Offcanvas Container -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav" dir="rtl" style="column-gap: 0.5rem">
+                <li class="nav-item">
+                    <a class="nav-link nav-btn-mobile" aria-current="page"
+                        href="https://learningcorner.net">الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-btn-mobile" aria-current="page"
+                        href="https://learningcorner.msaaq.net/courses">الدورات</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-btn-mobile" aria-current="page"
+                        href="pages/payment-method.html">وسائل الدفع</a>
+                </li>
+                <li class="nav-item" style="position: relative;">
+                    <a class="nav-link nav-btn-mobile offers-btn" onclick="openOverlay()" aria-current="page"
+                        href="#">العروض</a>
+                    <span id="changingColorElementMobile" class="new-word-offer mobile-new-word-offer">جديد !</span>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-btn-mobile" aria-current="page" href="pages/installments.html">
+                        تعليمات التقسيط</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-btn-mobile d-lg-none d-md-none d-block" aria-current="page"
+                        href="https://learningcorner.msaaq.net/login"> تسجيل الدخول </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="overlay-popup " id="overlay" dir="rtl">
+        <div class="container popup-container">
+            <div class="row offers-row" style="direction: rtl !important;">
+                <div dir="rtl">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi close-offers-popup"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                    </svg>
+                </div>
+                <h1 class="text-center fw-bold" dir="rtl" style="color: #8c20b4;">العروض <span><img
+                            src="images/money.webp" loading="lazy" class="money-image" alt="money">
+                    </span></h1>
+
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 text-center">
+                    <div class="card cards-offers second-card-offer"
+                        onclick="redirectToProductPage('https://learningcorner.msaaq.net')">
+                        <h3 class="card-title-offer">عرض الإشتراك</h3>
+                        <h5 dir="rtl"><span class="old-price">349</span> <span class="new-price fw-bold">314 SAR</span>
+                        </h5>
+                        <img src="images/limited-time.webp" class="image-offers" loading="lazy"
+                            alt="Placeholder Image">
+                        <div class="card-body">
+                            <p class="card-text-offer">
+                                <span>أختر أي مقرر وأستفد من عرض <br> <span class="text-danger fw-bold">خصم 10%</span></span>
+                                <br>
+                            </p>
+                            <p class="code-description"> استخدم كود <span class="text-danger">LC1</span> للإشتراك الكامل
+                                <br>
+                            </p>
+                            <p class="fw-bold text-danger mt-3">أو </p>
+                            <p class="installments-pay-first-card installments-with-code ">
+                                <a href="pages/installments.html" class="btn contact-me-offer">قسطها !</a><br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 text-center">
+                    <div class="card  cards-offers third-card-offer"
+                        onclick="redirectToProductPage('https://learningcorner.net/pages/installments.html')">
+                        <h3 class="card-title-offer">عرض الإشتراك بمقررين</h3>
+                        <h5 dir="rtl"><span class="old-price">698</span> <span class="new-price fw-bold">614 SAR</span>
+                        </h5>
+                        <img src="images/2-books.webp" class="image-offers" loading="lazy"
+                            alt="Placeholder Image">
+                        <div class="card-body">
+                            <p class="card-text-offer">
+                                <span>أختر أي مقررين و استفد من <br> <span class="text-danger fw-bold">خصم 12%</span></span>
+                            </p>
+                            <p class="code-description code-description-mobile">استخدم كود <span
+                                    class="text-danger">LC3</span> للإشتراك الكامل في المقررات</p> <br>
+                            <p class="installments-pay">
+
+                                تحب تقسطها ؟ <a href="pages/contact.html" class="btn contact-me-offer">تواصل
+                                    معي</a></p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 text-center">
+                    <div class="card  cards-offers fourth-card-offer"
+                        onclick="redirectToProductPage('https://learningcorner.net/pages/installments.html')">
+                        <h3 class="card-title-offer">عرض الإشتراك بثلاث مقررات</h3>
+                        <h5 dir="rtl"><span class="old-price">1047</span> <span class="new-price fw-bold">875 SAR</span>
+                        </h5>
+                        <img src="images/3-books.webp" class="image-offers" loading="lazy"
+                            alt="Placeholder Image">
+                        <div class="card-body">
+                            <p class="card-text-offer">
+                                <span>أختر أي ثلاث مقررات وأحصل على  <br> خصمك الخاص</span>
+                            </p>
+                            <p class="mb-2 code-description code-description-mobile">استخدم كود <span
+                                    class="text-danger">LC4</span> للإشتراك الكامل في المقررات</p> <br>
+
+                            <p class="installments-pay installments-pay-fourth-card">تحب تقسطها ؟ <a
+                                    href="pages/contact.html" class="btn contact-me-offer">تواصل معي</a></p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <p class="fw-bold offer-note">ملاحظة: لا يمكنك الحصول على خصمين في نفس الوقت. يرجى اختيار الخصم الذي
+                    يناسبكم أكثر.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="header-container">
+        <div id="first-section">
+            <div class="text-container text-center" dir="rtl">
+                <h1 class="header"> <span>تعلّم</span> <span class="auto-type"></span></h1>
+                <h4 class="header-description">
+                    في ركن التعلم أفهم تمامًا تحديات الحياة الجامعية اللي تمر بها وضغوطات المناهج الدراسية. أنا بشرى
+                    , احرص ان اكون
+                    شريكة رحلتك التعليمية وأساهم في تحقيق نجاحك الأكاديمي.
+                </h4>
+                <button onclick="window.location.href = 'https://learningcorner.msaaq.net/courses'" aria-label="request quote button"
+                class="button">
+                عرض الدورات
+              </button>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+    <div class="container" dir="rtl">
+        <div class="row">
+
+            <h1 class="text-center fw-bold mb-5 mt-5">المقررات الجامعية المطروحة</h1>
+
+            <!-- first collection -->
+            <div class="col-xl-4 col-lg-4 col-md-12">
+                <div class="card cards home-page-card"
+                    onclick="redirectToProductPage('https\:\/\/learningcorner.msaaq.net/courses/معمارية-وتنظيم-الحاسبات-عال-251-الجزء-الأول-1705950530')">
+                    <img class="card-img-top" height="250px" 
+                        srcset="images/comp-art.webp, mobile-img/comp-art.webp 579w"
+                        src="images/comp-art.webp" alt="معمارية وتنظيم الحاسبات">
+                    <div class="card-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-8">
+                                    <h5 class="card-title"> معمارية وتنظيم الحاسبات - عال 251 </h5>
+                                </div>
+                                <div class="col-4">
+                                    <p style="text-align: left;">
+                                        <span class="course-word">دورة</span>
+                                    </p>
+                                </div>
+                                <div class="col-4">
+                                    <p class="card-text text-secondary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="course-icon text-secondary"
+                                            fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                            aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5">
+                                            </path>
+                                        </svg>
+                                        <span style="margin-right: 5px;">29 مادة</span>
+                                    </p>
+                                </div>
+                                <div class="col-8">
+                                    <p style="text-align: left;" class="fw-bold" dir="ltr">
+                                        المعلّمة بشرى
+                                        <span><svg width="20px" style="fill: #9b9b9b;"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                                <path
+                                                    d="M160 64c0-35.3 28.7-64 64-64H576c35.3 0 64 28.7 64 64V352c0 35.3-28.7 64-64 64H336.8c-11.8-25.5-29.9-47.5-52.4-64H384V320c0-17.7 14.3-32 32-32h64c17.7 0 32 14.3 32 32v32h64V64L224 64v49.1C205.2 102.2 183.3 96 160 96V64zm0 64a96 96 0 1 1 0 192 96 96 0 1 1 0-192zM133.3 352h53.3C260.3 352 320 411.7 320 485.3c0 14.7-11.9 26.7-26.7 26.7H26.7C11.9 512 0 500.1 0 485.3C0 411.7 59.7 352 133.3 352z" />
+                                            </svg></span>
+                                    </p>
+                                </div>
+
+                                <div class="col-12">
+                                    <p class="mt-2" style="color: green;"><span class="fw-bold">349</span> ريال سعودي
+                                        <span class="text-decoration-line-through text-secondary">400
+                                            ريال سعودي</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="https://learningcorner.msaaq.net/courses/معمارية-وتنظيم-الحاسبات-1705765333"
+                            class="btn pay">معرفة المزيد..</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-12">
+                <div class="card cards home-page-card"
+                    onclick="redirectToProductPage('https\:\/\/learningcorner.msaaq.net/courses/البرمجة-الغرضية-الموجهة-1705764347')">
+                    <img class="card-img-top" height="250px"
+                    srcset="images/programming.webp, mobile-img/programming.webp 579w"
+                    width="8%" src="images/programming.webp"
+                        alt="البرمجة الغرضية الموجهة">
+                    <div class="card-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-8">
+                                    <h5 class="card-title"> البرمجة الغرضية الموجهة - عال 222</h5>
+                                </div>
+                                <div class="col-4">
+                                    <p style="text-align: left;">
+                                        <span class="course-word">دورة</span>
+                                    </p>
+                                </div>
+                                <div class="col-4">
+                                    <p class="card-text text-secondary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="course-icon text-secondary"
+                                            fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                            aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5">
+                                            </path>
+                                        </svg>
+                                        <span style="margin-right: 5px;">59 مادة</span>
+                                    </p>
+                                </div>
+                                <div class="col-8">
+                                    <p style="text-align: left;" class="fw-bold" dir="ltr">
+                                        المعلّمة بشرى
+                                        <span><svg width="20px" style="fill: #9b9b9b;"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                                <path
+                                                    d="M160 64c0-35.3 28.7-64 64-64H576c35.3 0 64 28.7 64 64V352c0 35.3-28.7 64-64 64H336.8c-11.8-25.5-29.9-47.5-52.4-64H384V320c0-17.7 14.3-32 32-32h64c17.7 0 32 14.3 32 32v32h64V64L224 64v49.1C205.2 102.2 183.3 96 160 96V64zm0 64a96 96 0 1 1 0 192 96 96 0 1 1 0-192zM133.3 352h53.3C260.3 352 320 411.7 320 485.3c0 14.7-11.9 26.7-26.7 26.7H26.7C11.9 512 0 500.1 0 485.3C0 411.7 59.7 352 133.3 352z" />
+                                            </svg></span>
+                                    </p>
+                                </div>
+
+                                <div class="col-12">
+                                    <p class="mt-2" style="color: green;"><span class="fw-bold">349</span> ريال سعودي
+                                        <span class="text-decoration-line-through text-secondary ">400
+                                            ريال سعودي</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="https://learningcorner.msaaq.net/courses/البرمجة-الغرضية-الموجهة-1705764347"
+                            class="btn pay">معرفة المزيد..</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-12">
+                <div class="card cards home-page-card"
+                    onclick="redirectToProductPage('https\:\/\/learningcorner.msaaq.net/courses/خوارزميات-وهياكل-البيانات-1700574797')">
+                    <img height="250px" width="8%" class="card-img-top"
+                    srcset="images/data-course.webp, mobile-img/data.webp 579w"
+                    src="images/data-course.webp" alt="خوارزميات وهياكل البيانات">
+                    <div class="card-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-8">
+                                    <h5 class="card-title">خوارزميات وهياكل البيانات - عال 231</h5>
+                                </div>
+                                <div class="col-4">
+                                    <p style="text-align: left;">
+                                        <span class="course-word">دورة</span>
+                                    </p>
+                                </div>
+                                <div class="col-4">
+                                    <p class="card-text text-secondary ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="course-icon text-secondary"
+                                            fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                            aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5">
+                                            </path>
+                                        </svg>
+                                        <span style="margin-right: 5px;">33 مادة</span>
+                                    </p>
+                                </div>
+                                <div class="col-8">
+                                    <p style="text-align: left;" class="fw-bold" dir="ltr">
+                                        المعلّمة بشرى
+                                        <span><svg width="20px" style="fill: #9b9b9b;"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                                <path
+                                                    d="M160 64c0-35.3 28.7-64 64-64H576c35.3 0 64 28.7 64 64V352c0 35.3-28.7 64-64 64H336.8c-11.8-25.5-29.9-47.5-52.4-64H384V320c0-17.7 14.3-32 32-32h64c17.7 0 32 14.3 32 32v32h64V64L224 64v49.1C205.2 102.2 183.3 96 160 96V64zm0 64a96 96 0 1 1 0 192 96 96 0 1 1 0-192zM133.3 352h53.3C260.3 352 320 411.7 320 485.3c0 14.7-11.9 26.7-26.7 26.7H26.7C11.9 512 0 500.1 0 485.3C0 411.7 59.7 352 133.3 352z" />
+                                            </svg></span>
+                                    </p>
+                                </div>
+
+                                <div class="col-12">
+                                    <p class="mt-2" style="color: green;"><span class="fw-bold">349</span> ريال سعودي
+                                        <span class="text-decoration-line-through text-secondary">400
+                                            ريال سعودي</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="https://app.learningcorner.net/courses/خوارزميات-وهياكل-البيانات-1700574797"
+                            class="btn pay">معرفة المزيد..</a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://learningcorner.msaaq.net/courses" class="btn show-all" data-aos="fade-up">عرض الكل</a>
+        </div>
+    </div>
+
+
+    <hr class="line-sap" data-aos="fade-up">
+
+
+
+
+    <div style="position: relative; overflow: hidden;" data-aos="fade-up" class="mt-5">
+        <h1 class="text-center mb-2" dir="rtl">
+            <span>
+                أراء الطلاب
+            </span>
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-stars" viewBox="0 0 16 16">
+                    <path
+                        d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z" />
+                </svg></span>
+        </h1>
+        <div class="slide-container swiper mb-5">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <img loading="lazy" src="images/students-1.webp" class="reviews" alt="review 1">
+
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <img loading="lazy" src="images/students-2.webp" class="reviews" alt="review 2">
+
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <img loading="lazy" src="images/students-3.webp"  class="reviews" alt="review 3">
+
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <img loading="lazy" src="images/students-4.webp"  class="reviews" alt="review 4">
+
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <img loading="lazy" src="images/students-5.webp" class="reviews" alt="review 5">
+
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <img loading="lazy" src="images/students-6.webp"  class="reviews" alt="review 6">
+
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <img loading="lazy" src="images/students-7.webp" class="reviews" alt="review 7">
+
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <img loading="lazy" src="images/students-8.webp" class="reviews" alt="review 8">
+
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <img loading="lazy" src="images/students-9.webp"  class="reviews" alt="review 9">
+
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <img loading="lazy" src="images/students-10.webp"  class="reviews" alt="review 10">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+
+        <img loading="lazy" src="images/purple-watercolor.webp" class="purple-watercolor"
+            alt="purple watercolor">
+        <img loading="lazy" src="images/orange-brush.webp" class="orange-watercolor" alt="orange brush">
+    </div>
+
+
+
+
+
+    <div class="text-center counter-container" dir="rtl">
+        <div class="line-counter-1"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-md-6 col-12 mt-5">
+                    <div data-aos="fade-up" class="third-icon-container icon-container">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                            <path
+                                d="M144 0a80 80 0 1 1 0 160A80 80 0 1 1 144 0zM512 0a80 80 0 1 1 0 160A80 80 0 1 1 512 0zM0 298.7C0 239.8 47.8 192 106.7 192h42.7c15.9 0 31 3.5 44.6 9.7c-1.3 7.2-1.9 14.7-1.9 22.3c0 38.2 16.8 72.5 43.3 96c-.2 0-.4 0-.7 0H21.3C9.6 320 0 310.4 0 298.7zM405.3 320c-.2 0-.4 0-.7 0c26.6-23.5 43.3-57.8 43.3-96c0-7.6-.7-15-1.9-22.3c13.6-6.3 28.7-9.7 44.6-9.7h42.7C592.2 192 640 239.8 640 298.7c0 11.8-9.6 21.3-21.3 21.3H405.3zM224 224a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zM128 485.3C128 411.7 187.7 352 261.3 352H378.7C452.3 352 512 411.7 512 485.3c0 14.7-11.9 26.7-26.7 26.7H154.7c-14.7 0-26.7-11.9-26.7-26.7z" />
+                        </svg>
+                    </div>
+                    <h3 class="icons-text-description" data-aos="fade-up"><span class="counter"
+                            data-count="1000">0</span><span class="plus"> + </span> طالب/ة</h3>
+                </div>
+                <div class="col-xl-4 col-md-6 col-12 mt-5">
+                    <div data-aos="fade-up" class="third-icon-container icon-container">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M337.8 5.4C327-1.8 313-1.8 302.2 5.4L166.3 96H48C21.5 96 0 117.5 0 144V464c0 26.5 21.5 48 48 48H256V416c0-35.3 28.7-64 64-64s64 28.7 64 64v96H592c26.5 0 48-21.5 48-48V144c0-26.5-21.5-48-48-48H473.7L337.8 5.4zM96 192h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H96c-8.8 0-16-7.2-16-16V208c0-8.8 7.2-16 16-16zm400 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H512c-8.8 0-16-7.2-16-16V208zM96 320h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H96c-8.8 0-16-7.2-16-16V336c0-8.8 7.2-16 16-16zm400 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H512c-8.8 0-16-7.2-16-16V336zM232 176a88 88 0 1 1 176 0 88 88 0 1 1 -176 0zm88-48c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H336V144c0-8.8-7.2-16-16-16z" />
+                        </svg>
+                    </div>
+                    <h3 class="icons-text-description" data-aos="fade-up"><span class="counter"
+                            data-count="100">0</span><span class="plus"> + </span> محاضرة</h3>
+                </div>
+                <div class="col-xl-4 col-md-6 col-12 mt-5">
+                    <div data-aos="fade-up" class="third-icon-container icon-container" style="width: 55px;">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z" />
+                        </svg>
+                    </div>
+                    <h3 class="icons-text-description" data-aos="fade-up"><span class="counter"
+                            data-count="70">0</span><span class="plus"> + </span> واجب </h3>
+                </div>
+                <div class="col-xl-6 col-md-6 col-12 mt-5">
+                    <div data-aos="fade-up" class="third-icon-container icon-container" style="width: 55px;">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z" />
+                        </svg>
+                    </div>
+                    <h3 class="icons-text-description" data-aos="fade-up"><span class="counter"
+                            data-count="200">0</span><span class="plus"> + </span> ساعة </h3>
+                </div>
+                <div class="col-xl-6 col-md-12 col-12 mt-5">
+                    <div data-aos="fade-up" class="third-icon-container icon-container" style="width: 55px;">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z" />
+                        </svg>
+                    </div>
+                    <h3 class="icons-text-description" data-aos="fade-up"><span class="counter"
+                            data-count="4">0</span><span class="plus"> + </span> سنوات خبرة </h3>
+                </div>
+            </div>
+        </div>
+        <div class="line-counter-2"></div>
+
+    </div>
+
+    <hr class="line-sap" data-aos="fade-up">
+
+
+
+
+    <div id="second-section">
+        <h2 class="text-center second-section-header" data-aos="fade-up">لماذا ركن التعلم؟</h2>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-xl-4 col-lg-6 col-md-12" id="first-col-card" data-aos="fade-up">
+                    <div class="first-card box">
+                        <div class="first-card-container faculty-container">
+                            <svg width="70%" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M312 24V34.5c6.4 1.2 12.6 2.7 18.2 4.2c12.8 3.4 20.4 16.6 17 29.4s-16.6 20.4-29.4 17c-10.9-2.9-21.1-4.9-30.2-5c-7.3-.1-14.7 1.7-19.4 4.4c-2.1 1.3-3.1 2.4-3.5 3c-.3 .5-.7 1.2-.7 2.8c0 .3 0 .5 0 .6c.2 .2 .9 1.2 3.3 2.6c5.8 3.5 14.4 6.2 27.4 10.1l.9 .3c11.1 3.3 25.9 7.8 37.9 15.3c13.7 8.6 26.1 22.9 26.4 44.9c.3 22.5-11.4 38.9-26.7 48.5c-6.7 4.1-13.9 7-21.3 8.8V232c0 13.3-10.7 24-24 24s-24-10.7-24-24V220.6c-9.5-2.3-18.2-5.3-25.6-7.8c-2.1-.7-4.1-1.4-6-2c-12.6-4.2-19.4-17.8-15.2-30.4s17.8-19.4 30.4-15.2c2.6 .9 5 1.7 7.3 2.5c13.6 4.6 23.4 7.9 33.9 8.3c8 .3 15.1-1.6 19.2-4.1c1.9-1.2 2.8-2.2 3.2-2.9c.4-.6 .9-1.8 .8-4.1l0-.2c0-1 0-2.1-4-4.6c-5.7-3.6-14.3-6.4-27.1-10.3l-1.9-.6c-10.8-3.2-25-7.5-36.4-14.4c-13.5-8.1-26.5-22-26.6-44.1c-.1-22.9 12.9-38.6 27.7-47.4c6.4-3.8 13.3-6.4 20.2-8.2V24c0-13.3 10.7-24 24-24s24 10.7 24 24zM568.2 336.3c13.1 17.8 9.3 42.8-8.5 55.9L433.1 485.5c-23.4 17.2-51.6 26.5-80.7 26.5H192 32c-17.7 0-32-14.3-32-32V416c0-17.7 14.3-32 32-32H68.8l44.9-36c22.7-18.2 50.9-28 80-28H272h16 64c17.7 0 32 14.3 32 32s-14.3 32-32 32H288 272c-8.8 0-16 7.2-16 16s7.2 16 16 16H392.6l119.7-88.2c17.8-13.1 42.8-9.3 55.9 8.5zM193.6 384l0 0-.9 0c.3 0 .6 0 .9 0z" />
+                            </svg>
+
+                        </div>
+                        <section>
+                            <h4 class="section-header">إتاحة التقسيط </h4>
+                            <h6 class="text-description third-section-description">
+                                وفرت لك إمكانية الدفع بالأقساط لتجربة تعلم مريحة وميسرة
+                        </section>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-12" id="second-col-card" data-aos="fade-up">
+                    <div class="second-card box">
+                        <div class="second-card-container faculty-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60%"
+                                viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z" />
+                            </svg>
+
+                        </div>
+                        <section>
+                            <h4 class="section-header">الاسايمنت و مراجعة إختبارات سابقة</h4>
+                            <h6 class="text-description second-section-description">
+                                اساعدك في شرح و حل الواجبات الجامعية و مراجعة الاختبارات السابقة
+                            </h6>
+                        </section>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-12" id="third-col-card" data-aos="fade-up">
+                    <div class="third-card box">
+                        <div class="third-card-container faculty-container" style="top: -27%;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60%"
+                                viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64c9.8-6.5 22.4-7.2 32.9-1.6z" />
+                            </svg>
+
+                        </div>
+                        <section>
+                            <h4 class="section-header">دروس مسجلة بالكامل</h4>
+                            <h6 class="text-description">
+                                الدروس مسجلة بالكامل وتقدر ترجع لها في أي وقت
+                            </h6>
+                        </section>
+                    </div>
+                </div>
+                <div class="col-xl-12 col-lg-6 col-md-12" id="fourth-col-card" data-aos="fade-up">
+                    <div class="fourth-card  box">
+                        <div class="fourth-card-container faculty-container">
+                            <svg width="70%" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M360 72a40 40 0 1 0 -80 0 40 40 0 1 0 80 0zM144 208a40 40 0 1 0 0-80 40 40 0 1 0 0 80zM32 416c-17.7 0-32 14.3-32 32s14.3 32 32 32H608c17.7 0 32-14.3 32-32s-14.3-32-32-32H32zM496 208a40 40 0 1 0 0-80 40 40 0 1 0 0 80zM200 313.5l26.9 49.9c6.3 11.7 20.8 16 32.5 9.8s16-20.8 9.8-32.5l-36.3-67.5c1.7-1.7 3.2-3.6 4.3-5.8L264 217.5V272c0 17.7 14.3 32 32 32h48c17.7 0 32-14.3 32-32V217.5l26.9 49.9c1.2 2.2 2.6 4.1 4.3 5.8l-36.3 67.5c-6.3 11.7-1.9 26.2 9.8 32.5s26.2 1.9 32.5-9.8L440 313.5V352c0 17.7 14.3 32 32 32h48c17.7 0 32-14.3 32-32V313.5l26.9 49.9c6.3 11.7 20.8 16 32.5 9.8s16-20.8 9.8-32.5l-37.9-70.3c-15.3-28.5-45.1-46.3-77.5-46.3H486.2c-16.3 0-31.9 4.5-45.4 12.6l-33.6-62.3c-15.3-28.5-45.1-46.3-77.5-46.3H310.2c-32.4 0-62.1 17.8-77.5 46.3l-33.6 62.3c-13.5-8.1-29.1-12.6-45.4-12.6H134.2c-32.4 0-62.1 17.8-77.5 46.3L18.9 340.6c-6.3 11.7-1.9 26.2 9.8 32.5s26.2 1.9 32.5-9.8L88 313.5V352c0 17.7 14.3 32 32 32h48c17.7 0 32-14.3 32-32V313.5z" />
+                            </svg>
+                        </div>
+                        <section>
+                            <h4 class="section-header">مجتمع الطلاب </h4>
+                            <h6 class="text-description text-description-fourth-card">
+                                تقدر تتواصل وتتفاعل مع زملائك لتعزيز عملية التعلم وتحسين الفهم.
+                                لها السبب، أقدم لكم مجموعة حصرية تجمع بين الطلاب المشتركين لتحقيق تجربة تعلم مميزة.
+
+                            </h6>
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <hr class="line-sap" data-aos="fade-up">
+
+
+    <div class="about-me text-center " style="margin-top: 120px;" dir="rtl" data-aos="fade-up">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-12" data-aos="fade-up">
+                    <img loading="lazy" class="about-me-image" src="images/about-me-image.webp"
+                        alt="about-me-image">
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12" data-aos="fade-up">
+                    <h2 class="text-center about-me-title">نبذة عني</h2>
+                    <h5 class="about-me-description"> مرحبًا بكم، أنا الأستاذة بشرى، وأنا فخورة بأن أكون جزءًا
+                        من رحلتكم
+                        التعليمية. خارج الفصل الدراسي، أعمل كمختصة في الأمن السيبراني وحوكمة وإدارة المخاطر
+                        والامتثال.
+                        تعتبر مهمتي أكثر من مجرد تقديم المعرفة، بل تتعداها لتشمل بناء جسور التواصل وتعزيز الفهم
+                        الشامل
+                        للمواضيع.
+                    </h5>
+                    <h2 class="text-center about-me-title mt-5">الخبرة</h2>
+                    <h5 class="about-me-description">
+                        حاصلة على درجة الماجستير في العلوم في مجال أمن المعلومات، وهي ميدان يشكل جوهر اهتمامي
+                        البحثي
+                        والعملي.
+                        أمتلك خبرة تدريسية تمتد لسبع سنوات في تدريس مناهج جامعة الملك خالد في تخصص الحاسب الآلي
+
+                    </h5>
+
+
+                    <h2 class="text-center about-me-title mt-5"> شكراً</h2>
+
+                    <h5 class="about-me-description">
+                        في النهاية، أنا هنا لدعمكم في تحقيق أهدافكم وتطلعاتكم الأكاديمية. ابدأوا اليوم رحلتكم
+                        نحو التعلم
+                        الشيق والنجاح الأكاديمي
+
+                    </h5>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- Site footer -->
+    <footer class="site-footer" data-aos="fade-up" style="margin-top: 7rem;">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-xs-6 col-md-6">
+                    <h6>المجالات</h6>
+                    <ul class="footer-links first-section">
+                        <li>
+                            <p class="footer-text" href="http://scanfcode.com/category/c-language/">البرمجة بلغة جافا
+                            </p>
+                        </li>
+                        <li>
+                            <p class="footer-text" href="http://scanfcode.com/category/front-end-development/">المعالجات
+                                السريعة ولغة التجميع</p>
+                        </li>
+                        <li>
+                            <p class="footer-text" href="http://scanfcode.com/category/back-end-development/">خوارزميات
+                                وهياكل البيانات</p>
+                        </li>
+                        <li>
+                            <p class="footer-text" href="http://scanfcode.com/category/java-programming-language/">
+                                معمارية الحاسوب</p>
+                        </li>
+                        <li>
+                            <p class="footer-text" href="http://scanfcode.com/category/java-programming-language/">الآمن
+                                السيبراني (قريباً)</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-6 col-md-6">
+                    <h6>روابط مختصرة</h6>
+                    <ul class="footer-links second-section">
+                        <li><a href="https://learningcorner.msaaq.net">الدورات</a></li>
+                        <li><a href="pages/contact.html">تواصل</a></li>
+                        <li><a href="pages/terms-and-conditions.html"> الشروط والأحكام</a></li>
+                        <li><a href="pages/common-q.html">الأسئلة الشائعة</a></li>
+                        <li><a href="pages/payment-method.html">وسائل الدفع</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text" dir="rtl"> جميع الحقوق محفوظة © 2024، Learning Corner with Bushra
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12 ">
+                    <ul class="social-icons">
+                        <li><a class="instagram social-logo" aria-label="Instagram" target="_blank"
+                                href="https://www.instagram.com/learncorner20/"><svg xmlns="http://www.w3.org/2000/svg"
+                                    height="16" width="14"
+                                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                                    <path
+                                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                                </svg></a></li>
+
+                        <li><a class="tiktok social-logo" aria-label="TikTok" target="_blank"
+                                href="https://www.tiktok.com/@learncorner20"><svg height="16" width="14"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z" />
+                                </svg></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/index.js" defer></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js" ></script>
+    <script>
+        AOS.init();
+        var swiper = new Swiper(".slide-content", {
+            slidesPerView: 3,
+            spaceBetween: 25,
+            loop: true,
+            centerSlide: 'true',
+            fade: 'true',
+            grabCursor: 'true',
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+      
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                520: {
+                    slidesPerView: 2,
+                },
+                950: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+      
+        var typed = new Typed('.auto-type', {
+            strings: ['البرمجة !', "الخوارزميات وهياكل البيانات", "معمارية الحاسوب !", "المعالجات الصغيرة ولغة التجميع"],
+            typeSpeed: 75,
+            backSpeed: 30,
+            loop: true
+        });
+      
+    </script>
+</body>
+</html>
